@@ -1,9 +1,9 @@
 {
   "title": "DUCTILE: Agentic LLM Orchestration of Engineering Analysis in Product Development Practice",
-  "description": "Source code for the DUCTILE framework, accompanying the paper published in the ASME Journal of Mechanical Design.",
+  "description": "Source code for the DUCTILE framework. DUCTILE (Delegated, User-supervised Coordination of Tool- and document-Integrated LLM-Enabled) is an approach for developing, executing and evaluating LLM-based agentic automation of engineering analysis tasks. Accompanying the paper published in the ASME Journal of Mechanical Design.",
   "creators": [
     {
-      "name": "Pradas Gómez, Alejandro",
+      "name": "Pradas-Gómez, Alejandro",
       "orcid": "0000-0001-7411-2732",
       "affiliation": "Chalmers University of Technology"
     },
@@ -22,11 +22,14 @@
   "upload_type": "software",
   "access_right": "open",
   "keywords": [
-    "engineering design",
-    "LLM",
-    "agentic AI",
-    "engineering analysis",
-    "product development"
+    "large language models",
+    "agent-based design",
+    "design automation",
+    "design methodology",
+    "design process",
+    "product development",
+    "expert systems",
+    "design evaluation"
   ],
   "related_identifiers": [
     {

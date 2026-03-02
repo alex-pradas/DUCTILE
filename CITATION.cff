@@ -3,7 +3,7 @@ message: "If you use this software, please cite it as below."
 title: "DUCTILE: Agentic LLM Orchestration of Engineering Analysis in Product Development Practice"
 type: software
 authors:
-  - family-names: "Pradas Gómez"
+  - family-names: "Pradas-Gómez"
     given-names: "Alejandro"
     orcid: "https://orcid.org/0000-0001-7411-2732"
   - family-names: "Brahma"
@@ -14,10 +14,20 @@ authors:
     orcid: "https://orcid.org/0000-0003-0373-3720"
 license: MIT
 repository-code: "https://github.com/alex-pradas/DUCTILE"
+keywords:
+  - large language models
+  - agent-based design
+  - design automation
+  - design methodology
+  - design process
+  - product development
+  - expert systems
+  - design evaluation
+abstract: "Engineering analysis automation in product development relies on rigid interfaces between tools, data formats and documented processes. This paper presents DUCTILE (Delegated, User-supervised Coordination of Tool- and document-Integrated LLM-Enabled), an approach for developing, executing and evaluating LLM-based agentic automation of engineering analysis tasks."
 # preferred-citation:
 #   type: article
 #   authors:
-#     - family-names: "Pradas Gómez"
+#     - family-names: "Pradas-Gómez"
 #       given-names: "Alejandro"
 #       orcid: "https://orcid.org/0000-0001-7411-2732"
 #     - family-names: "Brahma"
