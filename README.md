@@ -2,8 +2,7 @@
 
 **Agentic LLM Orchestration of Engineering Analysis in Product Development Practice**
 
-<!-- TODO: Replace with actual Zenodo DOI badge after first release -->
-<!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18836517.svg)](https://doi.org/10.5281/zenodo.18836517)
 
 ## About
 
