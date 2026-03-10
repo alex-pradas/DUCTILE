@@ -1,0 +1,19 @@
+[project]
+name = "ductile-evaluation"
+version = "0.1.0"
+description = "Evaluation pipeline for the DUCTILE agentic loads processing application"
+requires-python = ">=3.14"
+dependencies = [
+    "pydantic-ai",
+    "pydantic-ai-slim[evals]",
+    "anthropic",
+    "openai",
+    "python-dotenv",
+    "logfire",
+    "pyyaml",
+    "numpy",
+    "ductile-loads[all]",
+]
+
+[tool.uv]
+dev-dependencies = []

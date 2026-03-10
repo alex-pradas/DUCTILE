@@ -1,0 +1,213 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[top=2cm,bottom=2cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{listings}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+% ── Colours ──
+\definecolor{navy}{HTML}{1F3864}
+\definecolor{grey44}{HTML}{444444}
+\definecolor{grey55}{HTML}{555555}
+\definecolor{grey77}{HTML}{777777}
+\definecolor{greyAA}{HTML}{AAAAAA}
+\definecolor{blueBg}{HTML}{F0F4F8}
+\definecolor{greenBorder}{HTML}{4A7C3F}
+\definecolor{greenBg}{HTML}{F4F8F0}
+\definecolor{warnBorder}{HTML}{C67A1F}
+\definecolor{warnBg}{HTML}{FFF8F0}
+\definecolor{codeBg}{HTML}{F5F5F5}
+\definecolor{codeText}{HTML}{2D2D2D}
+
+% ── Helpers ──
+\newcommand{\sectionHead}[1]{\vspace{1.2em}{\Large\bfseries\color{navy}#1}\vspace{0.4em}}
+\newcommand{\subsectionHead}[1]{\vspace{0.8em}{\large\bfseries\color{navy}#1}\vspace{0.3em}}
+
+\newcommand{\infobox}[3]{% {title}{text}{border colour}
+  \vspace{0.4em}%
+  \noindent\fcolorbox{#3}{blueBg}{%
+    \begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule}%
+      {\bfseries\color{#3}#1}\par\smallskip #2%
+    \end{minipage}%
+  }\vspace{0.4em}%
+}
+
+\newcommand{\warnbox}[2]{%
+  \vspace{0.4em}%
+  \noindent\fcolorbox{warnBorder}{warnBg}{%
+    \begin{minipage}{\dimexpr\textwidth-2\fboxsep-2\fboxrule}%
+      {\bfseries\color{warnBorder}#1}\par\smallskip #2%
+    \end{minipage}%
+  }\vspace{0.4em}%
+}
+
+% Code listing style
+\lstset{
+  basicstyle=\small\ttfamily\color{codeText},
+  backgroundcolor=\color{codeBg},
+  frame=single,
+  rulecolor=\color{greyAA},
+  framesep=6pt,
+  xleftmargin=6pt,
+  xrightmargin=6pt,
+  breaklines=true,
+  showstringspaces=false,
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\fancyhead[L]{\small\color{grey55}Loads Processing Design Practice}
+\fancyhead[R]{\small\color{grey55}TRS Static Strength}
+\fancyfoot[C]{\small\color{grey77}Page \thepage\ of \pageref{LastPage}}
+
+\begin{document}
+
+% ════════════════════════════════════════════════════════════════
+% TITLE
+% ════════════════════════════════════════════════════════════════
+{\LARGE\bfseries\color{navy}Loads Processing Design Practice}\par\smallskip
+{\color{grey44}Static Strength Analysis --- Turbine Rear Structure (TRS)}\par\smallskip
+{\small\color{grey77}Document Ref: DP-TRS-LOADS-001 \quad|\quad Rev: 1 \quad|\quad Date: \today}\par
+\vspace{0.5em}
+\noindent\rule{\textwidth}{0.5pt}
+
+% ════════════════════════════════════════════════════════════════
+% 1. SCOPE
+% ════════════════════════════════════════════════════════════════
+\sectionHead{1.~Scope}
+
+This document defines the end to end methodology for processing OEM load deliveries into ANSYS APDL input files (\texttt{.inp}) for the TRS static strength analysis.
+
+% ════════════════════════════════════════════════════════════════
+% 2. INPUT DATA
+% ════════════════════════════════════════════════════════════════
+\sectionHead{2.~Input Data}
+
+\warnbox{Lessons learned}{Previous load loops have shown that the OEM is not always consistent when exporting loads from their Whole Engine Model (WEM). Name convention changes and coordinate flips have been observed in the past. Input should be always verified against the expected format in this section before processing.}
+
+
+\subsectionHead{2.1~OEM Load Delivery Format}
+
+We expect loads to be delivered in a single file, containing several load cases.
+
+
+\subsectionHead{2.2~Interface Points}
+
+The FE model expects the interfaces exactly in this format:
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Interface Point} & \textbf{FEM Component Name} & \textbf{DOFs} \\
+\midrule
+Lug Port       & \texttt{pilot\_lug\_port}       & $F_x$, $F_y$ \\
+Lug Failsafe   & \texttt{pilot\_lug\_failsafe}   & $F_x$, $F_y$ \\
+Lug Starboard  & \texttt{pilot\_lug\_starboard}  & $F_x$, $F_y$ \\
+LPT            & \texttt{pilot\_lpt}             & $F_x$, $F_y$, $M_x$, $M_y$, $M_z$ \\
+Nozzle         & \texttt{pilot\_nozzle}          & $F_x$, $F_y$, $M_x$, $M_y$, $M_z$ \\
+Plug           & \texttt{pilot\_plug}            & $F_x$, $F_y$, $M_x$, $M_y$, $M_z$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\infobox{Bearing interface excluded}{The Bearing interface shall not be included in the loadcases. The FE model fixes the nodes at that location, so the total load is reacted there as a boundary condition.}{navy}
+
+% ════════════════════════════════════════════════════════════════
+% 3. COORDINATE SYSTEM TRANSFORMATIONS
+% ════════════════════════════════════════════════════════════════
+\sectionHead{3.~Coordinate System Transformations}
+
+The OEM delivers loads in the engine coordinate system. The TRS FE model uses the same coordinate system as the Whole Engine Model (WEM), so no coordinate transformation is required.
+
+% ════════════════════════════════════════════════════════════════
+% 4. UNIT CONVERSIONS
+% ════════════════════════════════════════════════════════════════
+\sectionHead{4.~Unit Conversions}
+
+The TRS FE model input loads shall be in \textbf{N} (forces) and \textbf{N$\cdot$m} (moments). Verify that the OEM delivery uses the same units; if not, apply the appropriate conversion factors before writing the output files.
+
+% ════════════════════════════════════════════════════════════════
+% 5. LOAD CASE DOWNSELECTION
+% ════════════════════════════════════════════════════════════════
+\sectionHead{5.~Load Case Downselection}
+
+An initial envelope of loads shall be performed to remove non-critical load cases and save computational resources. Only load cases containing a maximum or minimum value for any interface force or moment component shall be selected.
+
+% ════════════════════════════════════════════════════════════════
+% 6. OUTPUT FORMAT
+% ════════════════════════════════════════════════════════════════
+\sectionHead{6.~Output Format}
+
+\subsectionHead{6.1~File Naming Convention}
+
+Each file shall be stored in a folder called \texttt{limit\_loads}, and the file names shall be \texttt{limit\_load\_\{i\}.inp} where \texttt{i} is the original load case number from the OEM.
+
+\subsectionHead{6.2~APDL File Structure}
+
+Each output file shall follow this structure:
+
+\begin{lstlisting}
+/TITLE,<load_case_name>
+nsel,u,,,all
+
+cmsel,s,<interface_point_1>
+f,all,fx,<value>
+f,all,fy,<value>
+f,all,fz,<value>
+f,all,mx,<value>
+f,all,my,<value>
+f,all,mz,<value>
+nsel,u,,,all
+
+cmsel,s,<interface_point_2>
+! ... repeat for all interface points ...
+\end{lstlisting}
+
+% ════════════════════════════════════════════════════════════════
+% 7. REPORTING
+% ════════════════════════════════════════════════════════════════
+\sectionHead{7.~Reporting}
+
+\subsectionHead{7.1~Summary Envelope Table}
+
+After downselection, a summary envelope table shall be produced listing the maximum and minimum value of each load component across all retained load cases, together with the governing load case identifier. This table provides a quick-look reference for stress engineers to identify critical interfaces and loading directions.
+
+\subsectionHead{7.2~Exceedance Against Previous Loads}
+
+If loads from a previous delivery are available, an exceedance comparison table shall be produced showing the percentage change per component between the current and previous envelopes. This highlights any significant load growth or relief and supports impact assessment on existing margins of safety.
+
+% ════════════════════════════════════════════════════════════════
+% 8. TOOLS AVAILABLE
+% ════════════════════════════════════════════════════════════════
+\sectionHead{8.~Tools Available}
+
+The file loads.py has codified the different operations described in this design practice. The code has been reviewed and approved under the Design Quality Management System procedures.
+
+% ════════════════════════════════════════════════════════════════
+% 9. PROCESSING SUMMARY
+% ════════════════════════════════════════════════════════════════
+\sectionHead{9.~Processing Summary}
+
+The complete processing chain is:
+
+\begin{enumerate}
+  \item Read the OEM load delivery file and verify format against Section~2.
+  \item Downselect applicable load cases (Section~5).
+  \item Verify coordinate system consistency (Section~3).
+  \item Convert units to the FEM unit system (Section~4).
+  \item Write one \texttt{.inp} file per load case (Section~6).
+  \item Produce the summary envelope table (Section~7.1).
+  \item If previous loads are available, produce the exceedance comparison (Section~7.2).
+\end{enumerate}
+
+\end{document}

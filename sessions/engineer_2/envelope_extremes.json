@@ -1,0 +1,202 @@
+{
+  "lug_port": {
+    "fx": {
+      "max": {
+        "value": 1718.0800188787246,
+        "loadcase": "Limit_61"
+      },
+      "min": {
+        "value": 585.039624902049,
+        "loadcase": "Limit_2"
+      }
+    },
+    "fy": {
+      "max": {
+        "value": 2240.876676178258,
+        "loadcase": "Limit_61"
+      },
+      "min": {
+        "value": 915.0319413965148,
+        "loadcase": "Limit_20"
+      }
+    }
+  },
+  "lug_starboard": {
+    "fx": {
+      "max": {
+        "value": 1153.7115546243926,
+        "loadcase": "Limit_34"
+      },
+      "min": {
+        "value": 471.8012579340765,
+        "loadcase": "Limit_2"
+      }
+    },
+    "fy": {
+      "max": {
+        "value": 1672.4711237204654,
+        "loadcase": "Limit_99"
+      },
+      "min": {
+        "value": 901.3069289773949,
+        "loadcase": "Limit_20"
+      }
+    }
+  },
+  "lpt": {
+    "fx": {
+      "max": {
+        "value": -354.75410621318724,
+        "loadcase": "Limit_2"
+      },
+      "min": {
+        "value": -960.0411191584967,
+        "loadcase": "Limit_61"
+      }
+    },
+    "fy": {
+      "max": {
+        "value": -609.6979053432573,
+        "loadcase": "Limit_20"
+      },
+      "min": {
+        "value": -1241.9716606441293,
+        "loadcase": "Limit_99"
+      }
+    },
+    "mx": {
+      "max": {
+        "value": -0.0010065678748944142,
+        "loadcase": "Limit_20"
+      },
+      "min": {
+        "value": -0.0020504068722850925,
+        "loadcase": "Limit_99"
+      }
+    },
+    "my": {
+      "max": {
+        "value": 0.001523999616866429,
+        "loadcase": "Limit_61"
+      },
+      "min": {
+        "value": 0.0005631478810141808,
+        "loadcase": "Limit_2"
+      }
+    },
+    "mz": {
+      "max": {
+        "value": 242.7841359414673,
+        "loadcase": "Limit_92"
+      },
+      "min": {
+        "value": 114.63556268506971,
+        "loadcase": "Limit_2"
+      }
+    }
+  },
+  "nozzle": {
+    "fx": {
+      "max": {
+        "value": -176.8964418292962,
+        "loadcase": "Limit_2"
+      },
+      "min": {
+        "value": -478.7199218032636,
+        "loadcase": "Limit_61"
+      }
+    },
+    "fy": {
+      "max": {
+        "value": -304.0229504154342,
+        "loadcase": "Limit_20"
+      },
+      "min": {
+        "value": -619.303240657857,
+        "loadcase": "Limit_99"
+      }
+    },
+    "mx": {
+      "max": {
+        "value": -0.0010065678748943873,
+        "loadcase": "Limit_20"
+      },
+      "min": {
+        "value": -0.0020504068722850374,
+        "loadcase": "Limit_99"
+      }
+    },
+    "my": {
+      "max": {
+        "value": 0.001523999616866388,
+        "loadcase": "Limit_61"
+      },
+      "min": {
+        "value": 0.0005631478810141658,
+        "loadcase": "Limit_2"
+      }
+    },
+    "mz": {
+      "max": {
+        "value": 242.7841359414673,
+        "loadcase": "Limit_92"
+      },
+      "min": {
+        "value": 114.63556268506971,
+        "loadcase": "Limit_2"
+      }
+    }
+  },
+  "plug": {
+    "fx": {
+      "max": {
+        "value": -185.8619980726761,
+        "loadcase": "Limit_2"
+      },
+      "min": {
+        "value": -502.9826505474411,
+        "loadcase": "Limit_61"
+      }
+    },
+    "fy": {
+      "max": {
+        "value": -319.43159760582336,
+        "loadcase": "Limit_20"
+      },
+      "min": {
+        "value": -650.6910853127487,
+        "loadcase": "Limit_99"
+      }
+    },
+    "mx": {
+      "max": {
+        "value": -0.0010065678748943873,
+        "loadcase": "Limit_20"
+      },
+      "min": {
+        "value": -0.0020504068722850374,
+        "loadcase": "Limit_99"
+      }
+    },
+    "my": {
+      "max": {
+        "value": 0.001523999616866388,
+        "loadcase": "Limit_61"
+      },
+      "min": {
+        "value": 0.0005631478810141658,
+        "loadcase": "Limit_2"
+      }
+    },
+    "mz": {
+      "max": {
+        "value": 242.7841359414673,
+        "loadcase": "Limit_92"
+      },
+      "min": {
+        "value": 114.63556268506971,
+        "loadcase": "Limit_2"
+      }
+    }
+  }
+}

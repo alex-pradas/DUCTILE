@@ -1,0 +1,8 @@
+.env
+__pycache__/
+.DS_Store
+*.pyc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+texput.log

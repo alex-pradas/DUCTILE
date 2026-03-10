@@ -1,0 +1,566 @@
+{
+  "report_metadata": {
+    "loadcases_info": {
+      "loadset1": {
+        "name": "Engine Mount Balanced Loads v2",
+        "version": 2,
+        "description": "Revised OEM balanced load cases",
+        "units": {
+          "forces": "N",
+          "moments": "Nm"
+        }
+      },
+      "loadset2": {
+        "name": "TRS interface Loads",
+        "version": 1,
+        "description": "Generated 100 balanced load cases",
+        "units": {
+          "forces": "N",
+          "moments": "Nm"
+        }
+      }
+    },
+    "chart_files": {
+      "bearing": "bearing_ranges.png",
+      "lpt": "lpt_ranges.png",
+      "lug_port": "lug_port_ranges.png",
+      "lug_starboard": "lug_starboard_ranges.png",
+      "nozzle": "nozzle_ranges.png",
+      "plug": "plug_ranges.png"
+    },
+    "image_format": "png",
+    "new_exceeds_old": true,
+    "total_comparisons": 48,
+    "points_analyzed": 6
+  },
+  "comparisons": [
+    {
+      "point_name": "bearing",
+      "component": "fx",
+      "type": "max",
+      "loadset1_value": -339.3283367205088,
+      "loadset2_value": -333.08463080114444,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_84",
+      "abs_diff": 6.243705919364345,
+      "pct_diff": 1.840019015124881
+    },
+    {
+      "point_name": "bearing",
+      "component": "fx",
+      "type": "min",
+      "loadset1_value": -918.2956601249399,
+      "loadset2_value": -777.6701633739647,
+      "loadset1_loadcase": "61",
+      "loadset2_loadcase": "Limit_92",
+      "abs_diff": 140.62549675097523,
+      "pct_diff": 15.31374946624949
+    },
+    {
+      "point_name": "bearing",
+      "component": "fy",
+      "type": "max",
+      "loadset1_value": -583.1864170093952,
+      "loadset2_value": -667.3516615940189,
+      "loadset1_loadcase": "20",
+      "loadset2_loadcase": "Limit_93",
+      "abs_diff": 84.16524458462368,
+      "pct_diff": 14.43196242742186
+    },
+    {
+      "point_name": "bearing",
+      "component": "fy",
+      "type": "min",
+      "loadset1_value": -1187.9670185031714,
+      "loadset2_value": -1095.4044000443178,
+      "loadset1_loadcase": "99",
+      "loadset2_loadcase": "Limit_62",
+      "abs_diff": 92.56261845885365,
+      "pct_diff": 7.791682514509686
+    },
+    {
+      "point_name": "bearing",
+      "component": "mx",
+      "type": "max",
+      "loadset1_value": -0.0010065678748943873,
+      "loadset2_value": -0.001151835372405626,
+      "loadset1_loadcase": "20",
+      "loadset2_loadcase": "Limit_93",
+      "abs_diff": 0.00014526749751123873,
+      "pct_diff": 14.43196242742008
+    },
+    {
+      "point_name": "bearing",
+      "component": "mx",
+      "type": "min",
+      "loadset1_value": -0.0020504068722850374,
+      "loadset2_value": -0.0018906456785408978,
+      "loadset1_loadcase": "99",
+      "loadset2_loadcase": "Limit_62",
+      "abs_diff": 0.00015976119374413967,
+      "pct_diff": 7.791682514509757
+    },
+    {
+      "point_name": "bearing",
+      "component": "my",
+      "type": "max",
+      "loadset1_value": 0.001523999616866388,
+      "loadset2_value": 0.0013422428590209297,
+      "loadset1_loadcase": "61",
+      "loadset2_loadcase": "Limit_92",
+      "abs_diff": 0.0001817567578454584,
+      "pct_diff": 11.926299444824162
+    },
+    {
+      "point_name": "bearing",
+      "component": "my",
+      "type": "min",
+      "loadset1_value": 0.0005631478810141658,
+      "loadset2_value": 0.0005748972870216443,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_84",
+      "abs_diff": 1.1749406007478531e-05,
+      "pct_diff": 2.0863802215359804
+    },
+    {
+      "point_name": "bearing",
+      "component": "mz",
+      "type": "max",
+      "loadset1_value": 242.7841359414673,
+      "loadset2_value": 233.8434108154343,
+      "loadset1_loadcase": "92",
+      "loadset2_loadcase": "Limit_92",
+      "abs_diff": 8.940725126032987,
+      "pct_diff": 3.6825820976163373
+    },
+    {
+      "point_name": "bearing",
+      "component": "mz",
+      "type": "min",
+      "loadset1_value": 114.63556268506971,
+      "loadset2_value": 80.42933335112431,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_62",
+      "abs_diff": 34.2062293339454,
+      "pct_diff": 29.83910798075619
+    },
+    {
+      "point_name": "lpt",
+      "component": "fx",
+      "type": "max",
+      "loadset1_value": -354.75410621318724,
+      "loadset2_value": -348.22656320152277,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_84",
+      "abs_diff": 6.527543011664477,
+      "pct_diff": 1.8400190152391898
+    },
+    {
+      "point_name": "lpt",
+      "component": "fx",
+      "type": "min",
+      "loadset1_value": -960.0411191584967,
+      "loadset2_value": -813.0228273976169,
+      "loadset1_loadcase": "61",
+      "loadset2_loadcase": "Limit_92",
+      "abs_diff": 147.01829176087983,
+      "pct_diff": 15.313749466246357
+    },
+    {
+      "point_name": "lpt",
+      "component": "fy",
+      "type": "max",
+      "loadset1_value": -609.6979053432573,
+      "loadset2_value": -697.6892779631738,
+      "loadset1_loadcase": "20",
+      "loadset2_loadcase": "Limit_93",
+      "abs_diff": 87.99137261991655,
+      "pct_diff": 14.431962427421787
+    },
+    {
+      "point_name": "lpt",
+      "component": "fy",
+      "type": "min",
+      "loadset1_value": -1241.9716606441293,
+      "loadset2_value": -1145.2011719265545,
+      "loadset1_loadcase": "99",
+      "loadset2_loadcase": "Limit_62",
+      "abs_diff": 96.77048871757484,
+      "pct_diff": 7.791682514509738
+    },
+    {
+      "point_name": "lpt",
+      "component": "mx",
+      "type": "max",
+      "loadset1_value": -0.0010065678748944142,
+      "loadset2_value": -0.0011518353724056572,
+      "loadset1_loadcase": "20",
+      "loadset2_loadcase": "Limit_93",
+      "abs_diff": 0.00014526749751124306,
+      "pct_diff": 14.431962427420125
+    },
+    {
+      "point_name": "lpt",
+      "component": "mx",
+      "type": "min",
+      "loadset1_value": -0.0020504068722850925,
+      "loadset2_value": -0.0018906456785409487,
+      "loadset1_loadcase": "99",
+      "loadset2_loadcase": "Limit_62",
+      "abs_diff": 0.0001597611937441438,
+      "pct_diff": 7.791682514509748
+    },
+    {
+      "point_name": "lpt",
+      "component": "my",
+      "type": "max",
+      "loadset1_value": 0.001523999616866429,
+      "loadset2_value": 0.0013422428590209657,
+      "loadset1_loadcase": "61",
+      "loadset2_loadcase": "Limit_92",
+      "abs_diff": 0.0001817567578454634,
+      "pct_diff": 11.926299444824169
+    },
+    {
+      "point_name": "lpt",
+      "component": "my",
+      "type": "min",
+      "loadset1_value": 0.0005631478810141808,
+      "loadset2_value": 0.0005748972870216599,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_84",
+      "abs_diff": 1.1749406007479073e-05,
+      "pct_diff": 2.0863802215360208
+    },
+    {
+      "point_name": "lpt",
+      "component": "mz",
+      "type": "max",
+      "loadset1_value": 242.7841359414673,
+      "loadset2_value": 233.8434108154343,
+      "loadset1_loadcase": "92",
+      "loadset2_loadcase": "Limit_92",
+      "abs_diff": 8.940725126032987,
+      "pct_diff": 3.6825820976163373
+    },
+    {
+      "point_name": "lpt",
+      "component": "mz",
+      "type": "min",
+      "loadset1_value": 114.63556268506971,
+      "loadset2_value": 80.42933335112431,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_62",
+      "abs_diff": 34.2062293339454,
+      "pct_diff": 29.83910798075619
+    },
+    {
+      "point_name": "lug_port",
+      "component": "fx",
+      "type": "max",
+      "loadset1_value": 1718.0800188787246,
+      "loadset2_value": 1463.6199770892529,
+      "loadset1_loadcase": "61",
+      "loadset2_loadcase": "Limit_63",
+      "abs_diff": 254.4600417894717,
+      "pct_diff": 14.810721211666303
+    },
+    {
+      "point_name": "lug_port",
+      "component": "fx",
+      "type": "min",
+      "loadset1_value": 585.039624902049,
+      "loadset2_value": 514.3934886297559,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_84",
+      "abs_diff": 70.64613627229312,
+      "pct_diff": 12.075444681908706
+    },
+    {
+      "point_name": "lug_port",
+      "component": "fy",
+      "type": "max",
+      "loadset1_value": 2240.876676178258,
+      "loadset2_value": 1990.0538501042633,
+      "loadset1_loadcase": "61",
+      "loadset2_loadcase": "Limit_66",
+      "abs_diff": 250.82282607399475,
+      "pct_diff": 11.193066925118114
+    },
+    {
+      "point_name": "lug_port",
+      "component": "fy",
+      "type": "min",
+      "loadset1_value": 915.0319413965148,
+      "loadset2_value": 1069.3613008751654,
+      "loadset1_loadcase": "20",
+      "loadset2_loadcase": "Limit_93",
+      "abs_diff": 154.32935947865064,
+      "pct_diff": 16.86600789510302
+    },
+    {
+      "point_name": "lug_starboard",
+      "component": "fx",
+      "type": "max",
+      "loadset1_value": 1153.7115546243926,
+      "loadset2_value": 995.2525710003366,
+      "loadset1_loadcase": "34",
+      "loadset2_loadcase": "Limit_98",
+      "abs_diff": 158.45898362405603,
+      "pct_diff": 13.734714105003883
+    },
+    {
+      "point_name": "lug_starboard",
+      "component": "fx",
+      "type": "min",
+      "loadset1_value": 471.8012579340765,
+      "loadset2_value": 523.0013210108764,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_84",
+      "abs_diff": 51.20006307679989,
+      "pct_diff": 10.852040391116113
+    },
+    {
+      "point_name": "lug_starboard",
+      "component": "fy",
+      "type": "max",
+      "loadset1_value": 1672.4711237204654,
+      "loadset2_value": 1485.8910413604804,
+      "loadset1_loadcase": "99",
+      "loadset2_loadcase": "Limit_35",
+      "abs_diff": 186.580082359985,
+      "pct_diff": 11.155952393661163
+    },
+    {
+      "point_name": "lug_starboard",
+      "component": "fy",
+      "type": "min",
+      "loadset1_value": 901.3069289773949,
+      "loadset2_value": 1009.1109128257749,
+      "loadset1_loadcase": "20",
+      "loadset2_loadcase": "Limit_93",
+      "abs_diff": 107.80398384837997,
+      "pct_diff": 11.960851557048633
+    },
+    {
+      "point_name": "nozzle",
+      "component": "fx",
+      "type": "max",
+      "loadset1_value": -176.8964418292962,
+      "loadset2_value": -173.64151366682816,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_84",
+      "abs_diff": 3.2549281624680475,
+      "pct_diff": 1.8400190127108547
+    },
+    {
+      "point_name": "nozzle",
+      "component": "fx",
+      "type": "min",
+      "loadset1_value": -478.7199218032636,
+      "loadset2_value": -405.40995233296815,
+      "loadset1_loadcase": "61",
+      "loadset2_loadcase": "Limit_92",
+      "abs_diff": 73.30996947029547,
+      "pct_diff": 15.313749466315961
+    },
+    {
+      "point_name": "nozzle",
+      "component": "fy",
+      "type": "max",
+      "loadset1_value": -304.0229504154342,
+      "loadset2_value": -347.89942839013395,
+      "loadset1_loadcase": "20",
+      "loadset2_loadcase": "Limit_93",
+      "abs_diff": 43.87647797469975,
+      "pct_diff": 14.431962427423473
+    },
+    {
+      "point_name": "nozzle",
+      "component": "fy",
+      "type": "min",
+      "loadset1_value": -619.303240657857,
+      "loadset2_value": -571.0490983437271,
+      "loadset1_loadcase": "99",
+      "loadset2_loadcase": "Limit_62",
+      "abs_diff": 48.25414231412992,
+      "pct_diff": 7.7916825145096595
+    },
+    {
+      "point_name": "nozzle",
+      "component": "mx",
+      "type": "max",
+      "loadset1_value": -0.0010065678748943873,
+      "loadset2_value": -0.001151835372405626,
+      "loadset1_loadcase": "20",
+      "loadset2_loadcase": "Limit_93",
+      "abs_diff": 0.00014526749751123873,
+      "pct_diff": 14.43196242742008
+    },
+    {
+      "point_name": "nozzle",
+      "component": "mx",
+      "type": "min",
+      "loadset1_value": -0.0020504068722850374,
+      "loadset2_value": -0.0018906456785408978,
+      "loadset1_loadcase": "99",
+      "loadset2_loadcase": "Limit_62",
+      "abs_diff": 0.00015976119374413967,
+      "pct_diff": 7.791682514509757
+    },
+    {
+      "point_name": "nozzle",
+      "component": "my",
+      "type": "max",
+      "loadset1_value": 0.001523999616866388,
+      "loadset2_value": 0.0013422428590209297,
+      "loadset1_loadcase": "61",
+      "loadset2_loadcase": "Limit_92",
+      "abs_diff": 0.0001817567578454584,
+      "pct_diff": 11.926299444824162
+    },
+    {
+      "point_name": "nozzle",
+      "component": "my",
+      "type": "min",
+      "loadset1_value": 0.0005631478810141658,
+      "loadset2_value": 0.0005748972870216443,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_84",
+      "abs_diff": 1.1749406007478531e-05,
+      "pct_diff": 2.0863802215359804
+    },
+    {
+      "point_name": "nozzle",
+      "component": "mz",
+      "type": "max",
+      "loadset1_value": 242.7841359414673,
+      "loadset2_value": 233.8434108154343,
+      "loadset1_loadcase": "92",
+      "loadset2_loadcase": "Limit_92",
+      "abs_diff": 8.940725126032987,
+      "pct_diff": 3.6825820976163373
+    },
+    {
+      "point_name": "nozzle",
+      "component": "mz",
+      "type": "min",
+      "loadset1_value": 114.63556268506971,
+      "loadset2_value": 80.42933335112431,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_62",
+      "abs_diff": 34.2062293339454,
+      "pct_diff": 29.83910798075619
+    },
+    {
+      "point_name": "plug",
+      "component": "fx",
+      "type": "max",
+      "loadset1_value": -185.8619980726761,
+      "loadset2_value": -182.44210197028247,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_84",
+      "abs_diff": 3.4198961023936363,
+      "pct_diff": 1.840019012954107
+    },
+    {
+      "point_name": "plug",
+      "component": "fx",
+      "type": "min",
+      "loadset1_value": -502.9826505474411,
+      "loadset2_value": -425.9571475836041,
+      "loadset1_loadcase": "61",
+      "loadset2_loadcase": "Limit_92",
+      "abs_diff": 77.02550296383697,
+      "pct_diff": 15.313749466309268
+    },
+    {
+      "point_name": "plug",
+      "component": "fy",
+      "type": "max",
+      "loadset1_value": -319.43159760582336,
+      "loadset2_value": -365.5318457536138,
+      "loadset1_loadcase": "20",
+      "loadset2_loadcase": "Limit_93",
+      "abs_diff": 46.10024814779047,
+      "pct_diff": 14.431962427423317
+    },
+    {
+      "point_name": "plug",
+      "component": "fy",
+      "type": "min",
+      "loadset1_value": -650.6910853127487,
+      "loadset2_value": -599.9913017949619,
+      "loadset1_loadcase": "99",
+      "loadset2_loadcase": "Limit_62",
+      "abs_diff": 50.69978351778673,
+      "pct_diff": 7.7916825145096835
+    },
+    {
+      "point_name": "plug",
+      "component": "mx",
+      "type": "max",
+      "loadset1_value": -0.0010065678748943873,
+      "loadset2_value": -0.001151835372405626,
+      "loadset1_loadcase": "20",
+      "loadset2_loadcase": "Limit_93",
+      "abs_diff": 0.00014526749751123873,
+      "pct_diff": 14.43196242742008
+    },
+    {
+      "point_name": "plug",
+      "component": "mx",
+      "type": "min",
+      "loadset1_value": -0.0020504068722850374,
+      "loadset2_value": -0.0018906456785408978,
+      "loadset1_loadcase": "99",
+      "loadset2_loadcase": "Limit_62",
+      "abs_diff": 0.00015976119374413967,
+      "pct_diff": 7.791682514509757
+    },
+    {
+      "point_name": "plug",
+      "component": "my",
+      "type": "max",
+      "loadset1_value": 0.001523999616866388,
+      "loadset2_value": 0.0013422428590209297,
+      "loadset1_loadcase": "61",
+      "loadset2_loadcase": "Limit_92",
+      "abs_diff": 0.0001817567578454584,
+      "pct_diff": 11.926299444824162
+    },
+    {
+      "point_name": "plug",
+      "component": "my",
+      "type": "min",
+      "loadset1_value": 0.0005631478810141658,
+      "loadset2_value": 0.0005748972870216443,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_84",
+      "abs_diff": 1.1749406007478531e-05,
+      "pct_diff": 2.0863802215359804
+    },
+    {
+      "point_name": "plug",
+      "component": "mz",
+      "type": "max",
+      "loadset1_value": 242.7841359414673,
+      "loadset2_value": 233.8434108154343,
+      "loadset1_loadcase": "92",
+      "loadset2_loadcase": "Limit_92",
+      "abs_diff": 8.940725126032987,
+      "pct_diff": 3.6825820976163373
+    },
+    {
+      "point_name": "plug",
+      "component": "mz",
+      "type": "min",
+      "loadset1_value": 114.63556268506971,
+      "loadset2_value": 80.42933335112431,
+      "loadset1_loadcase": "2",
+      "loadset2_loadcase": "Limit_62",
+      "abs_diff": 34.2062293339454,
+      "pct_diff": 29.83910798075619
+    }
+  ]
+}
