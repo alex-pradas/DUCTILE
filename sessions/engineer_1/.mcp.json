@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "design-documents": {
+      "command": "uvx",
+      "args": ["folios", "--path", "../../agent/documents"]
+    }
+  }
+}
