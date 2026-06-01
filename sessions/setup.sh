@@ -48,6 +48,10 @@ cp "$AGENT_DIR/inputs/"*.yaml "$SESSION_DIR/"
 
 echo "Session '$SESSION_NAME' ready at:"
 echo "  $SESSION_DIR"
+echo "---------"
+echo "cd $SESSION_DIR"
+echo "code ."
+echo "claude --dangerously-skip-permissions --ide"
 
 # Open in VS Code
-code "$SESSION_DIR"
+# code "$SESSION_DIR"

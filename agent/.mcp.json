@@ -3,6 +3,10 @@
     "design-documents": {
       "command": "uvx",
       "args": ["folios", "--path", "../../agent/documents"]
+    },
+    "mock-gkn-hpc": {
+      "command": "uvx",
+      "args": ["mock-gkn-hpc"]
     }
   }
 }

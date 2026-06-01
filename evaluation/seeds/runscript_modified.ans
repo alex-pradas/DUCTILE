@@ -1,0 +1,150 @@
+/batch
+/com, Ansys script to run the global model analysis
+finish
+/clear,start
+*dim,file_model,string,128
+*dim,path_model,string,128
+
+*dim,file_load,string,128
+*dim,path_load,string,128
+
+*dim,file_thermal,string,128
+*dim,path_thermal,string,128
+
+*dim,file_mat1,string,128
+*dim,path_mat1,string,128
+*dim,file_mat2,string,128
+*dim,path_mat2,string,128
+*dim,file_mat3,string,128
+*dim,path_mat3,string,128
+
+!--------------------------------------------------
+! User inputs
+!--------------------------------------------------
+ref_temp = 500
+unif_temp = 500
+
+n_lc=6 !Number of loadcases to run
+
+path_model(1)='/project/MBE/projects/open-trs/engineering_definition/01_inputs/3d_model/'
+file_model(1)='ansys'
+
+path_load(1)='limit_loads'
+file_load(1)='limit_load_'
+
+path_thermal(1)='/project/MBE/projects/open-trs/engineering_definition/01_inputs/loads'
+file_thermal(1)='thermal'
+
+path_mat1(1)='/project/MBE/projects/open-trs/engineering_definition/01_inputs/material'
+file_mat1(1)='mat1_linear'
+path_mat2(1)='/project/MBE/projects/open-trs/engineering_definition/01_inputs/material'
+file_mat2(1)='mat2_linear'
+path_mat3(1)='/project/MBE/projects/open-trs/engineering_definition/01_inputs/material'
+file_mat3(1)='mat3_linear'
+
+! Load case file names (envelope downselection from v2 delivery)
+*dim,load_case_name,STRING,128,n_lc
+load_case_name(1)='2'
+load_case_name(2)='20'
+load_case_name(3)='34'
+load_case_name(4)='61'
+load_case_name(5)='92'
+load_case_name(6)='99'
+
+! Macros
+*create,create_connection,mac
+    ! Connection of %arg1% to %arg2%
+    CMSEL,s,%arg1%
+    ESLN
+    NSEL,none
+    CMSEL,a,%arg2%
+    CEINTF
+*end
+
+*create,create_pilot,mac
+    ! arg1 = pilot node component (node)
+    ! arg2 = slave node component (node)
+    cmsel,s,%arg1%
+    pilot=ndnext(0)
+    cmsel,s,%arg2%
+    rbe3,%pilot%,all,all
+*end
+
+parsav,all,inputpars,par
+
+/prep7
+/nopr
+shpp,off
+cdread,db,%file_model(1)%,inp,%path_model(1)%
+shpp,on
+/gopr
+mpdele,all,all
+/nerr,,99999999
+
+allsel
+lsclear,all,all
+tref,ref_temp
+tunif,unif_temp
+time,1
+
+! Material application
+cmsel,s,body_trs
+emodif,all,mat,1001
+MTN=1001
+/input,%file_mat1(1)%,mat-SI,%path_mat1(1)%
+
+cmsel,s,body_lpt_case
+emodif,all,mat,1002
+MTN=1002
+/input,%file_mat2(1)%,mat-SI,%path_mat2(1)%
+
+cmsel,s,body_nozzle
+emodif,all,mat,1003
+MTN=1003
+/input,%file_mat3(1)%,mat-SI,%path_mat3(1)%
+
+cmsel,s,body_plug
+emodif,all,mat,1004
+MTN=1004
+/input,%file_mat3(1)%,mat-SI,%path_mat3(1)%
+
+! Create flange connections
+create_connection,'cont_trs_lpt','cont_lpt_trs'
+create_connection,'cont_trs_nozzle','cont_nozzle_trs'
+create_connection,'cont_trs_plug','cont_plug_trs'
+
+! Create pilot nodes
+create_pilot,'pilot_lpt','load_lpt'
+create_pilot,'pilot_nozzle','load_nozzle'
+create_pilot,'pilot_plug','load_plug'
+create_pilot,'pilot_lug_port','load_lug_port'
+create_pilot,'pilot_lug_starboard','load_lug_starboard'
+create_pilot,'pilot_lug_failsafe','load_lug_failsafe'
+
+! Applying fixity
+cmsel,s,bc_fix
+d,all,all
+
+allsel
+
+finish
+/solu
+antype,static
+
+! Appying temperature distribution
+/nopr
+    /input,%file_thermal(1)%,inp,%path_thermal(1)%
+/gopr
+
+*do,ls_run,1,n_lc
+    allsel
+    fcum,add
+    fdele,all,all
+    /input,%file_load(1)%%load_case_name(ls_run)%,inp,%path_load(1)%
+    solve
+*enddo
+
+/sys,rm *.emat *.esav *.osav *.full *.rdb *.ldhi
+
+finish
+/exit,nosav

@@ -6,3 +6,5 @@ __pycache__/
 *.fls
 *.synctex.gz
 texput.log
+.vscode/
+.logfire/

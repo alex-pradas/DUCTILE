@@ -88,7 +88,7 @@
 % ════════════════════════════════════════════════════════════════
 {\LARGE\bfseries\color{navy}Task Description}\par\smallskip
 {\color{grey44}Loads Processing for Static Strength Analysis --- Turbine Rear Structure}\par\smallskip
-{\small\itshape\color{grey77}This document is intended to be read by the engineer and sets the task scope. Read this document carefully. Take your time and ask questions to the researcher as needed to clarify the scope or details of the task.}\par
+{\small\itshape\color{grey77}This document is intended to be read by the engineer and sets the task scope.}\par
 
 % ════════════════════════════════════════════════════════════════
 % 1. BACKGROUND
@@ -107,7 +107,7 @@ You are a stress engineer working on the static strength analysis of a \textbf{T
 
 The programme is in the \textbf{certification phase}. The OEM customer has delivered a new loads update. Your task is to process these loads into input files that can be applied to the Finite Element Model (FEM) for structural analysis. The FE mesh and solver scripts have already been set up by another team member --- running the FE model is not part of this task. The mesh geometry and interface point locations are shown in Figure~\ref{fig:trs-interfaces}. It also shows the equilibrium example of a load case when forces are applied at the interface points.
 
-
+There is no change in the material or geometrical details of the components.
 
 \begin{figure}[h]
   \centering
@@ -122,13 +122,9 @@ The programme is in the \textbf{certification phase}. The OEM customer has deliv
 % ════════════════════════════════════════════════════════════════
 \sectionHead{2.~Detailed Task Description}
 
-Your task is to process the new OEM load delivery (\texttt{OEM\_loads\_v2.yaml}) into APDL-ANSYS-compatible input files (\texttt{.inp}), following the methodology document \texttt{loads\_processing\_design\_practice} (document~1001, version~1). The design practice contains all expected processing activities and must be followed in order.
+Your task is to perform part of the structural strength analysis, including the loads processing, ansys scirpt run and the submission of the FE model to the HPC cluster.
 
-You will use \textbf{Claude Code} (an AI coding agent) to assist you with this task. The agent already has access to the design practice document (document~1001, version~1) --- you do not need to provide it manually.
-
-Make use of the certified tool \texttt{ductile-loads}, available as a Python package on PyPI. Notice that the customer has delivered the files in a different format (YAML) than expected by the tool (JSON). Part of your task is to bypass this limitation.
-
-If there are any loads exceedances, let the researcher know.
+Make use of the certified tool \texttt{ductile-loads}, available as a Python package on PyPI (use uv). Notice that the customer has delivered the files in a different format (YAML) than expected by the tool (JSON). Part of your task is to bypass this limitation.
 
 \infobox{OEM Correction Notice}{The OEM has informed that due to a human error in the Whole Engine Model export, all \texttt{Fx} force components in this delivery are understated. Apply a \textbf{1.04 multiplication factor to all Fx forces} at every interface point before processing. The OEM has chosen not to issue a revised delivery; the correction shall be applied by the component owner during processing.}{navy}
 
@@ -140,10 +136,10 @@ If there are any loads exceedances, let the researcher know.
 The following resources are available:
 
 \begin{itemize}
-  \item \textbf{This document} --- a printed copy for you. The agent can also read it from the working directory.
-  \item \textbf{Loads processing design practice} --- printed for you. The agent already has access to it. You do not need to give it to the agent.
+  \item \textbf{This document} --- a printed copy for you and also available in the working directory. 
+  \item \textbf{Strength Analysis Design Practive 1000} --- Overall product document describing all the steps, your task is a subset of all. It is important because it points to all other subdocuments tools available to be used, beyond this document.
   \item \textbf{\texttt{ductile-loads}} --- the certified processing tool, available as a Python package on PyPI. The agent can access its documentation online. The documentation is also open in your browser for your reference.
-  \item \textbf{Previous analysis} --- script, inputs and outputs in the \texttt{previous\_run/} folder for reference.
+  \item \textbf{Previous analysis} --- scripts, inputs and outputs in the \texttt{previous\_run/} folder for reference.
 \end{itemize}
 
 Additionally, you or the agent can browse the internet and install Python packages via \texttt{uv pip install \textit{package}}.
