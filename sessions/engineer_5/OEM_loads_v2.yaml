@@ -1,0 +1,5908 @@
+name: Engine Mount Balanced Loads v2
+description: Revised OEM balanced load cases
+version: 2
+units:
+  forces: klbs
+  moments: klbs.in
+loads_type: limit
+load_cases:
+- name: Limit_1
+  description: Balanced load case 1
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2048280175116135
+      fy: 0.45688120590751596
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.2028271075264833
+      fy: 0.30431883800216747
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1368392649016467
+      fy: -0.25551513535763715
+      fz: 0.0
+      mx: -1.660776827904365e-05
+      my: 8.894169027131343e-06
+      mz: 1.0359767643908706
+  - name: bearing
+    force_moment:
+      fx: -0.13088908442193511
+      fy: -0.24440457310903424
+      fz: 0.0
+      mx: -1.6607768279043203e-05
+      my: 8.894169027131103e-06
+      mz: 1.0359767643908706
+  - name: nozzle
+    force_moment:
+      fx: -0.06823424631334093
+      fy: -0.12741140267407358
+      fz: 0.0
+      mx: -1.6607768279043203e-05
+      my: 8.894169027131103e-06
+      mz: 1.0359767643908706
+  - name: plug
+    force_moment:
+      fx: -0.07169252940090008
+      fy: -0.13386893276893871
+      fz: 0.0
+      mx: -1.6607768279043203e-05
+      my: 8.894169027131103e-06
+      mz: 1.0359767643908706
+- name: Limit_2
+  description: Balanced load case 2
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1264635955471225
+      fy: 0.22284614256676014
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.10198571331298845
+      fy: 0.2762626841072949
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.07668451485544552
+      fy: -0.16753790337529803
+      fz: 0.0
+      mx: -1.0889494562892716e-05
+      my: 4.984278725765007e-06
+      mz: 1.0146102215252868
+  - name: bearing
+    force_moment:
+      fx: -0.07335004281100604
+      fy: -0.16025285428477629
+      fz: 0.0
+      mx: -1.0889494562892423e-05
+      my: 4.984278725764874e-06
+      mz: 1.0146102215252868
+  - name: nozzle
+    force_moment:
+      fx: -0.03823836731908661
+      fy: -0.08354197586081216
+      fz: 0.0
+      mx: -1.0889494562892423e-05
+      my: 4.984278725764874e-06
+      mz: 1.0146102215252868
+  - name: plug
+    force_moment:
+      fx: -0.040176383874473955
+      fy: -0.08777609315316874
+      fz: 0.0
+      mx: -1.0889494562892423e-05
+      my: 4.984278725764874e-06
+      mz: 1.0146102215252868
+- name: Limit_3
+  description: Balanced load case 3
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.23083369471883003
+      fy: 0.3580740429252523
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1069757868517688
+      fy: 0.31130048035176816
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.11339389178770301
+      fy: -0.22469168688116203
+      fz: 0.0
+      mx: -1.4604330442995867e-05
+      my: 7.370285429039791e-06
+      mz: 1.107368309064261
+  - name: bearing
+    force_moment:
+      fx: -0.10846318624837732
+      fy: -0.21492142035529643
+      fz: 0.0
+      mx: -1.4604330442995472e-05
+      my: 7.370285429039594e-06
+      mz: 1.107368309064261
+  - name: nozzle
+    force_moment:
+      fx: -0.05654332291297601
+      fy: -0.1120414372113909
+      fz: 0.0
+      mx: -1.4604330442995472e-05
+      my: 7.370285429039594e-06
+      mz: 1.107368309064261
+  - name: plug
+    force_moment:
+      fx: -0.05940908062142298
+      fy: -0.1177199788291712
+      fz: 0.0
+      mx: -1.4604330442995472e-05
+      my: 7.370285429039594e-06
+      mz: 1.107368309064261
+- name: Limit_4
+  description: Balanced load case 4
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2746717673885126
+      fy: 0.2499134416804491
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.12181160469753656
+      fy: 0.22504517541003857
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13308919684686793
+      fy: -0.15943130364500088
+      fz: 0.0
+      mx: -1.036258828134001e-05
+      my: 8.650425104832143e-06
+      mz: 1.3951633237327108
+  - name: bearing
+    force_moment:
+      fx: -0.12730208054145845
+      fy: -0.15249875375497424
+      fz: 0.0
+      mx: -1.0362588281339732e-05
+      my: 8.650425104831907e-06
+      mz: 1.3951633237327108
+  - name: nozzle
+    force_moment:
+      fx: -0.06636429277731179
+      fy: -0.07949965859804502
+      fz: 0.0
+      mx: -1.0362588281339732e-05
+      my: 8.650425104831907e-06
+      mz: 1.3951633237327108
+  - name: plug
+    force_moment:
+      fx: -0.06972780192009753
+      fy: -0.08352890109246781
+      fz: 0.0
+      mx: -1.0362588281339732e-05
+      my: 8.650425104831907e-06
+      mz: 1.3951633237327108
+- name: Limit_5
+  description: Balanced load case 5
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.19362710694097787
+      fy: 0.36709608234474783
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.17237553342007608
+      fy: 0.2758149510543251
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.12285760483011339
+      fy: -0.2158085788830743
+      fz: 0.0
+      mx: -1.4026953298493472e-05
+      my: 7.985400275299062e-06
+      mz: 1.0732199863031726
+  - name: bearing
+    force_moment:
+      fx: -0.11751538874496516
+      fy: -0.2064245764594728
+      fz: 0.0
+      mx: -1.4026953298493094e-05
+      my: 7.985400275298847e-06
+      mz: 1.0732199863031726
+  - name: nozzle
+    force_moment:
+      fx: -0.06126235825330644
+      fy: -0.10761191780715809
+      fz: 0.0
+      mx: -1.4026953298493094e-05
+      my: 7.985400275298847e-06
+      mz: 1.0732199863031726
+  - name: plug
+    force_moment:
+      fx: -0.06436728853237084
+      fy: -0.11306596024936785
+      fz: 0.0
+      mx: -1.4026953298493094e-05
+      my: 7.985400275298847e-06
+      mz: 1.0732199863031726
+- name: Limit_6
+  description: Balanced load case 6
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.263204521629226
+      fy: 0.26974785775707144
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1529421363688567
+      fy: 0.28008972226550116
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13968965253915275
+      fy: -0.1845662317130036
+      fz: 0.0
+      mx: -1.1996288220404293e-05
+      my: 9.07943624190465e-06
+      mz: 1.5780670294516357
+  - name: bearing
+    force_moment:
+      fx: -0.13361552868018758
+      fy: -0.17654073998012765
+      fz: 0.0
+      mx: -1.199628822040397e-05
+      my: 9.079436241904402e-06
+      mz: 1.5780670294516357
+  - name: nozzle
+    force_moment:
+      fx: -0.06965557850175956
+      fy: -0.09203307051031437
+      fz: 0.0
+      mx: -1.199628822040397e-05
+      my: 9.079436241904402e-06
+      mz: 1.5780670294516357
+  - name: plug
+    force_moment:
+      fx: -0.07318589827690304
+      fy: -0.09669753781912713
+      fz: 0.0
+      mx: -1.199628822040397e-05
+      my: 9.079436241904402e-06
+      mz: 1.5780670294516357
+- name: Limit_7
+  description: Balanced load case 7
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.240220791028621
+      fy: 0.4485407853508758
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1507141682532719
+      fy: 0.3158614931948392
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13122673840499022
+      fy: -0.2565900425689811
+      fz: 0.0
+      mx: -1.667763423771793e-05
+      my: 8.52937052177718e-06
+      mz: 1.0359248660520635
+  - name: bearing
+    force_moment:
+      fx: -0.12552060736249587
+      fy: -0.2454327401401283
+      fz: 0.0
+      mx: -1.667763423771748e-05
+      my: 8.529370521776952e-06
+      mz: 1.0359248660520635
+  - name: nozzle
+    force_moment:
+      fx: -0.06543558676304723
+      fy: -0.127947400024483
+      fz: 0.0
+      mx: -1.667763423771748e-05
+      my: 8.529370521776952e-06
+      mz: 1.0359248660520635
+  - name: plug
+    force_moment:
+      fx: -0.06875202675120218
+      fy: -0.13443209581212304
+      fz: 0.0
+      mx: -1.667763423771748e-05
+      my: 8.529370521776952e-06
+      mz: 1.0359248660520635
+- name: Limit_8
+  description: Balanced load case 8
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.21515212994733585
+      fy: 0.20609944392769186
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.15830377437786966
+      fy: 0.2137434366148455
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.12535947246156823
+      fy: -0.14093037869490135
+      fz: 0.0
+      mx: -9.160079967735911e-06
+      my: 8.148014665424842e-06
+      mz: 1.4114272561022085
+  - name: bearing
+    force_moment:
+      fx: -0.1199084676894842
+      fy: -0.13480230435199683
+      fz: 0.0
+      mx: -9.160079967735666e-06
+      my: 8.148014665424622e-06
+      mz: 1.4114272561022085
+  - name: nozzle
+    force_moment:
+      fx: -0.0625099026058497
+      fy: -0.07027426067646768
+      fz: 0.0
+      mx: -9.160079967735666e-06
+      my: 8.148014665424622e-06
+      mz: 1.4114272561022085
+  - name: plug
+    force_moment:
+      fx: -0.06567806156804912
+      fy: -0.07383593681917167
+      fz: 0.0
+      mx: -9.160079967735666e-06
+      my: 8.148014665424622e-06
+      mz: 1.4114272561022085
+- name: Limit_9
+  description: Balanced load case 9
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.12405320127543125
+      fy: 0.4278644513474774
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.2157705148163222
+      fy: 0.3082821868058647
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.11407001813585715
+      fy: -0.24710535607002596
+      fz: 0.0
+      mx: -1.6061156175259663e-05
+      my: 7.414231748214606e-06
+      mz: 0.8868402832709893
+  - name: bearing
+    force_moment:
+      fx: -0.10910991260090382
+      fy: -0.23636047617578215
+      fz: 0.0
+      mx: -1.6061156175259232e-05
+      my: 7.414231748214406e-06
+      mz: 0.8868402832709893
+  - name: nozzle
+    force_moment:
+      fx: -0.05688047009009361
+      fy: -0.12321790637212401
+      fz: 0.0
+      mx: -1.6061156175259232e-05
+      my: 7.414231748214406e-06
+      mz: 0.8868402832709893
+  - name: plug
+    force_moment:
+      fx: -0.05976331526471073
+      fy: -0.12946289953541018
+      fz: 0.0
+      mx: -1.6061156175259232e-05
+      my: 7.414231748214406e-06
+      mz: 0.8868402832709893
+- name: Limit_10
+  description: Balanced load case 10
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.15536867033781046
+      fy: 0.2119574177748357
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.16261034541893127
+      fy: 0.23559331377296142
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.10673731813549599
+      fy: -0.1502311864874426
+      fz: 0.0
+      mx: -9.764606429192812e-06
+      my: 6.937626782121843e-06
+      mz: 1.2548724032110574
+  - name: bearing
+    force_moment:
+      fx: -0.10209606032618491
+      fy: -0.14369868520600595
+      fz: 0.0
+      mx: -9.764606429192548e-06
+      my: 6.937626782121657e-06
+      mz: 1.2548724032110574
+  - name: nozzle
+    force_moment:
+      fx: -0.05322405423256021
+      fy: -0.07491206408952619
+      fz: 0.0
+      mx: -9.764606429192548e-06
+      my: 6.937626782121657e-06
+      mz: 1.2548724032110574
+  - name: plug
+    force_moment:
+      fx: -0.0559215830624286
+      fy: -0.07870879576482247
+      fz: 0.0
+      mx: -9.764606429192548e-06
+      my: 6.937626782121657e-06
+      mz: 1.2548724032110574
+- name: Limit_11
+  description: Balanced load case 11
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1280360785101428
+      fy: 0.30775694728368214
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1064557148424702
+      fy: 0.29941726613049024
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.07871282036451029
+      fy: -0.20381265419973751
+      fz: 0.0
+      mx: -1.324725178627246e-05
+      my: 5.11611290388503e-06
+      mz: 0.8434291490208632
+  - name: bearing
+    force_moment:
+      fx: -0.07529015153059948
+      fy: -0.19495027045730418
+      fz: 0.0
+      mx: -1.3247251786272103e-05
+      my: 5.116112903884892e-06
+      mz: 0.8434291490208632
+  - name: nozzle
+    force_moment:
+      fx: -0.03924977218089495
+      fy: -0.10163020722027918
+      fz: 0.0
+      mx: -1.3247251786272103e-05
+      my: 5.116112903884892e-06
+      mz: 0.8434291490208632
+  - name: plug
+    force_moment:
+      fx: -0.04123904927643662
+      fy: -0.10678108153685151
+      fz: 0.0
+      mx: -1.3247251786272103e-05
+      my: 5.116112903884892e-06
+      mz: 0.8434291490208632
+- name: Limit_12
+  description: Balanced load case 12
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.17085457757739592
+      fy: 0.37435033803519707
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.14767906853332485
+      fy: 0.2837220061583062
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.10692349317722556
+      fy: -0.22089783815313632
+      fz: 0.0
+      mx: -1.4357740899591612e-05
+      my: 6.949727638480782e-06
+      mz: 0.8985556609707753
+  - name: bearing
+    force_moment:
+      fx: -0.10227413992031562
+      fy: -0.2112925395161414
+      fz: 0.0
+      mx: -1.4357740899591224e-05
+      my: 6.949727638480595e-06
+      mz: 0.8985556609707753
+  - name: nozzle
+    force_moment:
+      fx: -0.05331688952856346
+      fy: -0.11014965265117276
+      fz: 0.0
+      mx: -1.4357740899591224e-05
+      my: 6.949727638480595e-06
+      mz: 0.8985556609707753
+  - name: plug
+    force_moment:
+      fx: -0.056019123484539024
+      fy: -0.11573231387305294
+      fz: 0.0
+      mx: -1.4357740899591224e-05
+      my: 6.949727638480595e-06
+      mz: 0.8985556609707753
+- name: Limit_13
+  description: Balanced load case 13
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.20188660867549743
+      fy: 0.22853147859614312
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.18994404127198355
+      fy: 0.2676300048777346
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13152739855882842
+      fy: -0.1665485566158427
+      fz: 0.0
+      mx: -1.0825189793996385e-05
+      my: 8.54891258999221e-06
+      mz: 1.5777845314405232
+  - name: bearing
+    force_moment:
+      fx: -0.12580819391356443
+      fy: -0.15930652728123884
+      fz: 0.0
+      mx: -1.0825189793996094e-05
+      my: 8.548912589991982e-06
+      mz: 1.5777845314405232
+  - name: nozzle
+    force_moment:
+      fx: -0.06558550951251897
+      fy: -0.08304864282135611
+      fz: 0.0
+      mx: -1.0825189793996094e-05
+      my: 8.548912589991982e-06
+      mz: 1.5777845314405232
+  - name: plug
+    force_moment:
+      fx: -0.06890954796251984
+      fy: -0.08725775675543997
+      fz: 0.0
+      mx: -1.0825189793996094e-05
+      my: 8.548912589991982e-06
+      mz: 1.5777845314405232
+- name: Limit_14
+  description: Balanced load case 14
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.29437428845699654
+      fy: 0.38748792161312096
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.16338347174359077
+      fy: 0.2987583471097005
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.15365742158484205
+      fy: -0.23035509475376553
+      fz: 0.0
+      mx: -1.4972436095470467e-05
+      my: 9.987302115741578e-06
+      mz: 1.4224005468843806
+  - name: bearing
+    force_moment:
+      fx: -0.14697593735480433
+      fy: -0.22033856631617502
+      fz: 0.0
+      mx: -1.4972436095470064e-05
+      my: 9.987302115741308e-06
+      mz: 1.4224005468843806
+  - name: nozzle
+    force_moment:
+      fx: -0.07662053986971358
+      fy: -0.11486546851565568
+      fz: 0.0
+      mx: -1.4972436095470064e-05
+      my: 9.987302115741308e-06
+      mz: 1.4224005468843806
+  - name: plug
+    force_moment:
+      fx: -0.08050386139102188
+      fy: -0.12068713913722535
+      fz: 0.0
+      mx: -1.4972436095470064e-05
+      my: 9.987302115741308e-06
+      mz: 1.4224005468843806
+- name: Limit_15
+  description: Balanced load case 15
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1382472173875628
+      fy: 0.28095736512556624
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.12277111749563094
+      fy: 0.273130453331214
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.08761709316828911
+      fy: -0.1859929266501734
+      fz: 0.0
+      mx: -1.2089019396145713e-05
+      my: 5.694865701361744e-06
+      mz: 0.9440014183867409
+  - name: bearing
+    force_moment:
+      fx: -0.08380723992315117
+      fy: -0.1779053979546454
+      fz: 0.0
+      mx: -1.2089019396145386e-05
+      my: 5.69486570136159e-06
+      mz: 0.9440014183867409
+  - name: nozzle
+    force_moment:
+      fx: -0.043689845315451815
+      fy: -0.09274448513112761
+      fz: 0.0
+      mx: -1.2089019396145386e-05
+      my: 5.69486570136159e-06
+      mz: 0.9440014183867409
+  - name: plug
+    force_moment:
+      fx: -0.04590415647604059
+      fy: -0.09744500872083381
+      fz: 0.0
+      mx: -1.2089019396145386e-05
+      my: 5.69486570136159e-06
+      mz: 0.9440014183867409
+- name: Limit_16
+  description: Balanced load case 16
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.20247615945511324
+      fy: 0.28966405720855215
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.20832970066894188
+      fy: 0.2684812405517397
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13789688505020395
+      fy: -0.18735491734071866
+      fz: 0.0
+      mx: -1.2177544977047706e-05
+      my: 8.96291137550454e-06
+      mz: 1.4595675262635543
+  - name: bearing
+    force_moment:
+      fx: -0.13190071608318432
+      fy: -0.17920816521669142
+      fz: 0.0
+      mx: -1.2177544977047377e-05
+      my: 8.962911375504298e-06
+      mz: 1.4595675262635543
+  - name: nozzle
+    force_moment:
+      fx: -0.06876162354954059
+      fy: -0.09342363528819571
+      fz: 0.0
+      mx: -1.2177544977047377e-05
+      my: 8.962911375504298e-06
+      mz: 1.4595675262635543
+  - name: plug
+    force_moment:
+      fx: -0.07224663544111198
+      fy: -0.09815857991468635
+      fz: 0.0
+      mx: -1.2177544977047377e-05
+      my: 8.962911375504298e-06
+      mz: 1.4595675262635543
+- name: Limit_17
+  description: Balanced load case 17
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.160837138927025
+      fy: 0.31772552137365223
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.11748935781499342
+      fy: 0.2885628304957659
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.09342699472631529
+      fy: -0.2035152934279838
+      fz: 0.0
+      mx: -1.3227924168808037e-05
+      my: 6.072493033384339e-06
+      mz: 0.9414222249915888
+  - name: bearing
+    force_moment:
+      fx: -0.0893645095857465
+      fy: -0.19466583982121632
+      fz: 0.0
+      mx: -1.322792416880768e-05
+      my: 6.072493033384176e-06
+      mz: 0.9414222249915888
+  - name: nozzle
+    force_moment:
+      fx: -0.04658692499502775
+      fy: -0.10148192969074513
+      fz: 0.0
+      mx: -1.322792416880768e-05
+      my: 6.072493033384176e-06
+      mz: 0.9414222249915888
+  - name: plug
+    force_moment:
+      fx: -0.048948067434823175
+      fy: -0.10662528892947304
+      fz: 0.0
+      mx: -1.322792416880768e-05
+      my: 6.072493033384176e-06
+      mz: 0.9414222249915888
+- name: Limit_18
+  description: Balanced load case 18
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.13262309971363598
+      fy: 0.4586316405892992
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.20454297401013935
+      fy: 0.2537639564777573
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.11317791644154834
+      fy: -0.23913274686354635
+      fz: 0.0
+      mx: -1.554295890254134e-05
+      my: 7.356247636358282e-06
+      mz: 0.6103617545416691
+  - name: bearing
+    force_moment:
+      fx: -0.10825660215617082
+      fy: -0.22873453986109968
+      fz: 0.0
+      mx: -1.5542958902540922e-05
+      my: 7.356247636358084e-06
+      mz: 0.6103617545416691
+  - name: nozzle
+    force_moment:
+      fx: -0.056435627837290225
+      fy: -0.11924240284452271
+      fz: 0.0
+      mx: -1.5542958902540922e-05
+      my: 7.356247636358084e-06
+      mz: 0.6103617545416691
+  - name: plug
+    force_moment:
+      fx: -0.05929592728866237
+      fy: -0.125285907497888
+      fz: 0.0
+      mx: -1.5542958902540922e-05
+      my: 7.356247636358084e-06
+      mz: 0.6103617545416691
+- name: Limit_19
+  description: Balanced load case 19
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.12419554266694278
+      fy: 0.44601850178341906
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.2096684466353233
+      fy: 0.335228187547289
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.11206949224369402
+      fy: -0.26224427490407143
+      fz: 0.0
+      mx: -1.7045143505948075e-05
+      my: 7.284203167382272e-06
+      mz: 0.8919341896941815
+  - name: bearing
+    force_moment:
+      fx: -0.10719637555740244
+      fy: -0.2508411095433062
+      fz: 0.0
+      mx: -1.7045143505947618e-05
+      my: 7.284203167382076e-06
+      mz: 0.8919341896941815
+  - name: nozzle
+    force_moment:
+      fx: -0.05588291740181285
+      fy: -0.13076685599076449
+      fz: 0.0
+      mx: -1.7045143505947618e-05
+      my: 7.284203167382076e-06
+      mz: 0.8919341896941815
+  - name: plug
+    force_moment:
+      fx: -0.05871520409922765
+      fy: -0.13739444889256605
+      fz: 0.0
+      mx: -1.7045143505947618e-05
+      my: 7.284203167382076e-06
+      mz: 0.8919341896941815
+- name: Limit_20
+  description: Balanced load case 20
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2434811907766168
+      fy: 0.20570736305869036
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.13009068215798433
+      fy: 0.20262185753155437
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.12539840011996012
+      fy: -0.13706554131777565
+      fz: 0.0
+      mx: -8.908876360929407e-06
+      my: 8.150544854294716e-06
+      mz: 1.3783624337761882
+  - name: bearing
+    force_moment:
+      fx: -0.11994570265681326
+      fy: -0.13110552166250902
+      fz: 0.0
+      mx: -8.908876360929168e-06
+      my: 8.150544854294498e-06
+      mz: 1.3783624337761882
+  - name: nozzle
+    force_moment:
+      fx: -0.06252931369626091
+      fy: -0.06834707796520659
+      fz: 0.0
+      mx: -8.908876360929168e-06
+      my: 8.150544854294498e-06
+      mz: 1.3783624337761882
+  - name: plug
+    force_moment:
+      fx: -0.06569845646137101
+      fy: -0.07181107964475356
+      fz: 0.0
+      mx: -8.908876360929168e-06
+      my: 8.150544854294498e-06
+      mz: 1.3783624337761882
+- name: Limit_21
+  description: Balanced load case 21
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.33455221688364956
+      fy: 0.3984128985989361
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.16332395481088074
+      fy: 0.2532339100804093
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1671241330302255
+      fy: -0.2187409523387144
+      fz: 0.0
+      mx: -1.4217549361582764e-05
+      my: 1.086260064893085e-05
+      mz: 1.3953211499549003
+  - name: bearing
+    force_moment:
+      fx: -0.15985707591190385
+      fy: -0.20922944154747963
+      fz: 0.0
+      mx: -1.4217549361582381e-05
+      my: 1.0862600648930557e-05
+      mz: 1.3953211499549003
+  - name: nozzle
+    force_moment:
+      fx: -0.08333565125481183
+      fy: -0.10907413183461423
+      fz: 0.0
+      mx: -1.4217549361582381e-05
+      my: 1.0862600648930557e-05
+      mz: 1.3953211499549003
+  - name: plug
+    force_moment:
+      fx: -0.08755931149743966
+      fy: -0.11460228295853742
+      fz: 0.0
+      mx: -1.4217549361582381e-05
+      my: 1.0862600648930557e-05
+      mz: 1.3953211499549003
+- name: Limit_22
+  description: Balanced load case 22
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1931532773184315
+      fy: 0.3156215552956722
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.20597187686499024
+      fy: 0.3140961621889664
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13397597466121816
+      fy: -0.21137992451203907
+      fz: 0.0
+      mx: -1.3739103165939933e-05
+      my: 8.708063179765168e-06
+      mz: 1.4772209261828564
+  - name: bearing
+    force_moment:
+      fx: -0.12815029860421095
+      fy: -0.20218849322516522
+      fz: 0.0
+      mx: -1.3739103165939562e-05
+      my: 8.708063179764933e-06
+      mz: 1.4772209261828564
+  - name: nozzle
+    force_moment:
+      fx: -0.06680648029996511
+      fy: -0.10540359044297887
+      fz: 0.0
+      mx: -1.3739103165939562e-05
+      my: 8.708063179764933e-06
+      mz: 1.4772209261828564
+  - name: plug
+    force_moment:
+      fx: -0.07019240061788505
+      fy: -0.11074570930445558
+      fz: 0.0
+      mx: -1.3739103165939562e-05
+      my: 8.708063179764933e-06
+      mz: 1.4772209261828564
+- name: Limit_23
+  description: Balanced load case 23
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.29691209145940917
+      fy: 0.3151055343506845
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.11981618209838892
+      fy: 0.2903646858518509
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13988488581530978
+      fy: -0.2032406678216446
+      fz: 0.0
+      mx: -1.3210074273430207e-05
+      my: 9.092125858123084e-06
+      mz: 1.4702419730074832
+  - name: bearing
+    force_moment:
+      fx: -0.13380227262963099
+      fy: -0.1944031557575573
+      fz: 0.0
+      mx: -1.3210074273429852e-05
+      my: 9.092125858122839e-06
+      mz: 1.4702419730074832
+  - name: nozzle
+    force_moment:
+      fx: -0.0697529306432217
+      fy: -0.10134498894293059
+      fz: 0.0
+      mx: -1.3210074273429852e-05
+      my: 9.092125858122839e-06
+      mz: 1.4702419730074832
+  - name: plug
+    force_moment:
+      fx: -0.07328818446954206
+      fy: -0.10648140768040297
+      fz: 0.0
+      mx: -1.3210074273429852e-05
+      my: 9.092125858122839e-06
+      mz: 1.4702419730074832
+- name: Limit_24
+  description: Balanced load case 24
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.25414092517943687
+      fy: 0.3147121960933384
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.17849007571505174
+      fy: 0.25134162273089866
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.14522301941132557
+      fy: -0.190009602986496
+      fz: 0.0
+      mx: -1.235009211010514e-05
+      my: 9.439089593411788e-06
+      mz: 1.4088074050613817
+  - name: bearing
+    force_moment:
+      fx: -0.13890828821230727
+      fy: -0.18174741719128304
+      fz: 0.0
+      mx: -1.2350092110104809e-05
+      my: 9.439089593411534e-06
+      mz: 1.4088074050613817
+  - name: nozzle
+    force_moment:
+      fx: -0.07241476548256459
+      fy: -0.09474738161466693
+      fz: 0.0
+      mx: -1.2350092110104809e-05
+      my: 9.439089593411534e-06
+      mz: 1.4088074050613817
+  - name: plug
+    force_moment:
+      fx: -0.07608492778814649
+      fy: -0.09954941703179118
+      fz: 0.0
+      mx: -1.2350092110104809e-05
+      my: 9.439089593411534e-06
+      mz: 1.4088074050613817
+- name: Limit_25
+  description: Balanced load case 25
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.26145614412550056
+      fy: 0.36494317921382635
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.13107144079507788
+      fy: 0.26943554998126634
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.131761341575094
+      fy: -0.21294450539669565
+      fz: 0.0
+      mx: -1.3840796542145895e-05
+      my: 8.564118231002448e-06
+      mz: 1.1587434954569709
+  - name: bearing
+    force_moment:
+      fx: -0.12603196438779216
+      fy: -0.20368504145380065
+      fz: 0.0
+      mx: -1.384079654214552e-05
+      my: 8.564118231002218e-06
+      mz: 1.1587434954569709
+  - name: nozzle
+    force_moment:
+      fx: -0.06570216408047959
+      fy: -0.10618376123337755
+      fz: 0.0
+      mx: -1.384079654214552e-05
+      my: 8.564118231002218e-06
+      mz: 1.1587434954569709
+  - name: plug
+    force_moment:
+      fx: -0.06903211487720796
+      fy: -0.11156542111121871
+      fz: 0.0
+      mx: -1.384079654214552e-05
+      my: 8.564118231002218e-06
+      mz: 1.1587434954569709
+- name: Limit_26
+  description: Balanced load case 26
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1136134166870842
+      fy: 0.34984562935839464
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.14049705753384412
+      fy: 0.26815170760334156
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.08529830329672652
+      fy: -0.20744569639459157
+      fz: 0.0
+      mx: -1.3483389355327615e-05
+      my: 5.544150853042756e-06
+      mz: 0.6869793120675822
+  - name: bearing
+    force_moment:
+      fx: -0.08158927796993987
+      fy: -0.19842533711226998
+      fz: 0.0
+      mx: -1.3483389355327252e-05
+      my: 5.544150853042606e-06
+      mz: 0.6869793120675822
+  - name: nozzle
+    force_moment:
+      fx: -0.04253359181338214
+      fy: -0.10344180637025654
+      fz: 0.0
+      mx: -1.3483389355327252e-05
+      my: 5.544150853042606e-06
+      mz: 0.6869793120675822
+  - name: plug
+    force_moment:
+      fx: -0.04468930114063543
+      fy: -0.10868449708461819
+      fz: 0.0
+      mx: -1.3483389355327252e-05
+      my: 5.544150853042606e-06
+      mz: 0.6869793120675822
+- name: Limit_27
+  description: Balanced load case 27
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.27777286927002637
+      fy: 0.24653861361126111
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.13916433737168712
+      fy: 0.2718938538079944
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1399550192383694
+      fy: -0.1740243489819647
+      fz: 0.0
+      mx: -1.1311095363328165e-05
+      my: 9.096684334106888e-06
+      mz: 1.6281155234062428
+  - name: bearing
+    force_moment:
+      fx: -0.13386935644179013
+      fy: -0.16645724983760096
+      fz: 0.0
+      mx: -1.131109536332786e-05
+      my: 9.096684334106642e-06
+      mz: 1.6281155234062428
+  - name: nozzle
+    force_moment:
+      fx: -0.06978790234081277
+      fy: -0.08677641100281518
+      fz: 0.0
+      mx: -1.131109536332786e-05
+      my: 9.096684334106642e-06
+      mz: 1.6281155234062428
+  - name: plug
+    force_moment:
+      fx: -0.07332492862056321
+      fy: -0.0911744575968749
+      fz: 0.0
+      mx: -1.131109536332786e-05
+      my: 9.096684334106642e-06
+      mz: 1.6281155234062428
+- name: Limit_28
+  description: Balanced load case 28
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1440181064806078
+      fy: 0.21282244478012677
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.12743415864250607
+      fy: 0.21353991558550467
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.09111949325325859
+      fy: -0.14311879918014334
+      fz: 0.0
+      mx: -9.30232117104127e-06
+      my: 5.922511899326814e-06
+      mz: 1.0101823931659741
+  - name: bearing
+    force_moment:
+      fx: -0.08715734517773453
+      fy: -0.13689556576968162
+      fz: 0.0
+      mx: -9.302321171041019e-06
+      my: 5.922511899326654e-06
+      mz: 1.0101823931659741
+  - name: nozzle
+    force_moment:
+      fx: -0.045436300399228975
+      fy: -0.07136550610611772
+      fz: 0.0
+      mx: -9.302321171041019e-06
+      my: 5.922511899326654e-06
+      mz: 1.0101823931659741
+  - name: plug
+    force_moment:
+      fx: -0.04773912629278136
+      fy: -0.07498248930968872
+      fz: 0.0
+      mx: -9.302321171041019e-06
+      my: 5.922511899326654e-06
+      mz: 1.0101823931659741
+- name: Limit_29
+  description: Balanced load case 29
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.3549151432419012
+      fy: 0.44885665333521835
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.2027420718163313
+      fy: 0.35641271600680824
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.18719108061711054
+      fy: -0.27030806626070125
+      fz: 0.0
+      mx: -1.7569267363088697e-05
+      my: 1.2166896047965126e-05
+      mz: 1.7819137019553477
+  - name: bearing
+    force_moment:
+      fx: -0.17905145260437055
+      fy: -0.25855426313555396
+      fz: 0.0
+      mx: -1.7569267363088226e-05
+      my: 1.2166896047964797e-05
+      mz: 1.7819137019553477
+  - name: nozzle
+    force_moment:
+      fx: -0.09334193889444051
+      fy: -0.13478782706232667
+      fz: 0.0
+      mx: -1.7569267363088226e-05
+      my: 1.2166896047964797e-05
+      mz: 1.7819137019553477
+  - name: plug
+    force_moment:
+      fx: -0.09807274294172307
+      fy: -0.14161921288344492
+      fz: 0.0
+      mx: -1.7569267363088226e-05
+      my: 1.2166896047964797e-05
+      mz: 1.7819137019553477
+- name: Limit_30
+  description: Balanced load case 30
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.3021970595304357
+      fy: 0.2750522842946223
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.2193518502336521
+      fy: 0.29431548479338887
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1750704579397607
+      fy: -0.191122010240006
+      fz: 0.0
+      mx: -1.2422395466508647e-05
+      my: 1.1379089515457932e-05
+      mz: 1.9980664593970907
+  - name: bearing
+    force_moment:
+      fx: -0.16745787084981117
+      fy: -0.18281145365055945
+      fz: 0.0
+      mx: -1.2422395466508311e-05
+      my: 1.1379089515457627e-05
+      mz: 1.9980664593970907
+  - name: nozzle
+    force_moment:
+      fx: -0.0872980482470054
+      fy: -0.0953020781821164
+      fz: 0.0
+      mx: -1.2422395466508311e-05
+      my: 1.1379089515457627e-05
+      mz: 1.9980664593970907
+  - name: plug
+    force_moment:
+      fx: -0.09172253272701557
+      fy: -0.10013222701532945
+      fz: 0.0
+      mx: -1.2422395466508311e-05
+      my: 1.1379089515457627e-05
+      mz: 1.9980664593970907
+- name: Limit_31
+  description: Balanced load case 31
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.32100597176980417
+      fy: 0.4655330707812286
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.16179975221360374
+      fy: 0.2590326088128895
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1620653741423597
+      fy: -0.24321792829396763
+      fz: 0.0
+      mx: -1.580848425578244e-05
+      my: 1.0533795487083112e-05
+      mz: 1.1471143821987888
+  - name: bearing
+    force_moment:
+      fx: -0.15501828698971856
+      fy: -0.23264208538546788
+      fz: 0.0
+      mx: -1.5808484255782018e-05
+      my: 1.0533795487082827e-05
+      mz: 1.1471143821987888
+  - name: nozzle
+    force_moment:
+      fx: -0.08081312528220587
+      fy: -0.12127945906625907
+      fz: 0.0
+      mx: -1.5808484255782018e-05
+      my: 1.0533795487082827e-05
+      mz: 1.1471143821987888
+  - name: plug
+    force_moment:
+      fx: -0.08490893756884685
+      fy: -0.12742620684842376
+      fz: 0.0
+      mx: -1.5808484255782018e-05
+      my: 1.0533795487082827e-05
+      mz: 1.1471143821987888
+- name: Limit_32
+  description: Balanced load case 32
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.17492476348086003
+      fy: 0.34293781264173745
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.21843690159381468
+      fy: 0.3437205993121305
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1320413206738146
+      fy: -0.23049344055958979
+      fz: 0.0
+      mx: -1.4981428185439344e-05
+      my: 8.582316088099473e-06
+      mz: 1.4627097276842662
+  - name: bearing
+    force_moment:
+      fx: -0.12629976915817007
+      fy: -0.2204708964326143
+      fz: 0.0
+      mx: -1.4981428185438941e-05
+      my: 8.582316088099243e-06
+      mz: 1.4627097276842662
+  - name: nozzle
+    force_moment:
+      fx: -0.06584177432398722
+      fy: -0.11493445399140519
+      fz: 0.0
+      mx: -1.4981428185438941e-05
+      my: 8.582316088099243e-06
+      mz: 1.4627097276842662
+  - name: plug
+    force_moment:
+      fx: -0.06917880091849235
+      fy: -0.12075962097025866
+      fz: 0.0
+      mx: -1.4981428185438941e-05
+      my: 8.582316088099243e-06
+      mz: 1.4627097276842662
+- name: Limit_33
+  description: Balanced load case 33
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.11520601845686687
+      fy: 0.3433207420235992
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.16105492841959523
+      fy: 0.25248951331755803
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.09273364314693426
+      fy: -0.19999806786536095
+      fz: 0.0
+      mx: -1.2999314356526685e-05
+      my: 6.027427122512084e-06
+      mz: 0.7409363482877052
+  - name: bearing
+    force_moment:
+      fx: -0.08870130700649742
+      fy: -0.19130155374494207
+      fz: 0.0
+      mx: -1.2999314356526336e-05
+      my: 6.027427122511922e-06
+      mz: 0.7409363482877052
+  - name: nozzle
+    force_moment:
+      fx: -0.046241188537830574
+      fy: -0.09972808195163657
+      fz: 0.0
+      mx: -1.2999314356526336e-05
+      my: 6.027427122511922e-06
+      mz: 0.7409363482877052
+  - name: plug
+    force_moment:
+      fx: -0.04858480818523026
+      fy: -0.10478255177921761
+      fz: 0.0
+      mx: -1.2999314356526336e-05
+      my: 6.027427122511922e-06
+      mz: 0.7409363482877052
+- name: Limit_34
+  description: Balanced load case 34
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1591300635577979
+      fy: 0.34338873964989747
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.24938911009060116
+      fy: 0.29820300480758655
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.137129303635696
+      fy: -0.21536572776242288
+      fz: 0.0
+      mx: -1.3998169215767558e-05
+      my: 8.913020732524107e-06
+      mz: 1.3755802124508663
+  - name: bearing
+    force_moment:
+      fx: -0.13116651140449923
+      fy: -0.20600098182997187
+      fz: 0.0
+      mx: -1.399816921576718e-05
+      my: 8.913020732523868e-06
+      mz: 1.3755802124508663
+  - name: nozzle
+    force_moment:
+      fx: -0.06837887274468421
+      fy: -0.10739109220956955
+      fz: 0.0
+      mx: -1.399816921576718e-05
+      my: 8.913020732523868e-06
+      mz: 1.3755802124508663
+  - name: plug
+    force_moment:
+      fx: -0.07184448586315827
+      fy: -0.11283394265551992
+      fz: 0.0
+      mx: -1.399816921576718e-05
+      my: 8.913020732523868e-06
+      mz: 1.3755802124508663
+- name: Limit_35
+  description: Balanced load case 35
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.22068734263482204
+      fy: 0.36890281523416985
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.14769265974018325
+      fy: 0.3218692225509467
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.12365562367103851
+      fy: -0.23187427818498316
+      fz: 0.0
+      mx: -1.5071178764329247e-05
+      my: 8.037269265257934e-06
+      mz: 1.2202002104491108
+  - name: bearing
+    force_moment:
+      fx: -0.11827870734007594
+      fy: -0.2217916911084163
+      fz: 0.0
+      mx: -1.5071178764328842e-05
+      my: 8.037269265257717e-06
+      mz: 1.2202002104491108
+  - name: nozzle
+    force_moment:
+      fx: -0.06166028653946133
+      fy: -0.11562300208258015
+      fz: 0.0
+      mx: -1.5071178764328842e-05
+      my: 8.037269265257717e-06
+      mz: 1.2202002104491108
+  - name: plug
+    force_moment:
+      fx: -0.0647853848241254
+      fy: -0.12148306640913711
+      fz: 0.0
+      mx: -1.5071178764328842e-05
+      my: 8.037269265257717e-06
+      mz: 1.2202002104491108
+- name: Limit_36
+  description: Balanced load case 36
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.33390406847594567
+      fy: 0.2858053092701667
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1709249178982507
+      fy: 0.2626667748550513
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1694580128016476
+      fy: -0.18410787011432242
+      fz: 0.0
+      mx: -1.1966496000040372e-05
+      my: 1.101429629862628e-05
+      mz: 1.803356045253855
+  - name: bearing
+    force_moment:
+      fx: -0.16208947161090478
+      fy: -0.17610230931456863
+      fz: 0.0
+      mx: -1.1966496000040048e-05
+      my: 1.1014296298625983e-05
+      mz: 1.803356045253855
+  - name: nozzle
+    force_moment:
+      fx: -0.0844994292623284
+      fy: -0.09180451068688834
+      fz: 0.0
+      mx: -1.1966496000040048e-05
+      my: 1.1014296298625983e-05
+      mz: 1.803356045253855
+  - name: plug
+    force_moment:
+      fx: -0.08878207269924876
+      fy: -0.09645739400943876
+      fz: 0.0
+      mx: -1.1966496000040048e-05
+      my: 1.1014296298625983e-05
+      mz: 1.803356045253855
+- name: Limit_37
+  description: Balanced load case 37
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1938751263677451
+      fy: 0.25613687034188903
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.19880121558641567
+      fy: 0.30911198859028344
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13181127545643065
+      fy: -0.18973939880374077
+      fz: 0.0
+      mx: -1.2332529594879123e-05
+      my: 8.567363793243534e-06
+      mz: 1.6239825006321007
+  - name: bearing
+    force_moment:
+      fx: -0.1260797269947766
+      fy: -0.18148896229448733
+      fz: 0.0
+      mx: -1.2332529594878791e-05
+      my: 8.567363793243303e-06
+      mz: 1.6239825006321007
+  - name: nozzle
+    force_moment:
+      fx: -0.0657270633737395
+      fy: -0.09461264558861783
+      fz: 0.0
+      mx: -1.2332529594878791e-05
+      my: 8.567363793243303e-06
+      mz: 1.6239825006321007
+  - name: plug
+    force_moment:
+      fx: -0.06905827612905821
+      fy: -0.0994078522453266
+      fz: 0.0
+      mx: -1.2332529594878791e-05
+      my: 8.567363793243303e-06
+      mz: 1.6239825006321007
+- name: Limit_38
+  description: Balanced load case 38
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.12838548447426348
+      fy: 0.2976717514686374
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.2221242792403447
+      fy: 0.2606875039987157
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.11765704749464818
+      fy: -0.1874267374002651
+      fz: 0.0
+      mx: -1.2182213079800431e-05
+      my: 7.647378611924466e-06
+      mz: 1.1857922300646828
+  - name: bearing
+    force_moment:
+      fx: -0.11254096719542843
+      fy: -0.17927686232525825
+      fz: 0.0
+      mx: -1.2182213079800104e-05
+      my: 7.647378611924259e-06
+      mz: 1.1857922300646828
+  - name: nozzle
+    force_moment:
+      fx: -0.058669125157837565
+      fy: -0.0934594480180922
+      fz: 0.0
+      mx: -1.2182213079800104e-05
+      my: 7.647378611924259e-06
+      mz: 1.1857922300646828
+  - name: plug
+    force_moment:
+      fx: -0.06164262386661012
+      fy: -0.09819620772373765
+      fz: 0.0
+      mx: -1.2182213079800104e-05
+      my: 7.647378611924259e-06
+      mz: 1.1857922300646828
+- name: Limit_39
+  description: Balanced load case 39
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.160710011649256
+      fy: 0.37117673099029347
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.24741544817736208
+      fy: 0.27936392766968704
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13699714410724675
+      fy: -0.21836964643275042
+      fz: 0.0
+      mx: -1.419341551746334e-05
+      my: 8.904430733644385e-06
+      mz: 1.228256643161995
+  - name: bearing
+    force_moment:
+      fx: -0.13104009856733714
+      fy: -0.208874281132763
+      fz: 0.0
+      mx: -1.4193415517462957e-05
+      my: 8.904430733644144e-06
+      mz: 1.228256643161995
+  - name: nozzle
+    force_moment:
+      fx: -0.06831297202366476
+      fy: -0.10888898191684543
+      fz: 0.0
+      mx: -1.4193415517462957e-05
+      my: 8.904430733644144e-06
+      mz: 1.228256643161995
+  - name: plug
+    force_moment:
+      fx: -0.07177524512827611
+      fy: -0.11440774917762171
+      fz: 0.0
+      mx: -1.4193415517462957e-05
+      my: 8.904430733644144e-06
+      mz: 1.228256643161995
+- name: Limit_40
+  description: Balanced load case 40
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2696213919723661
+      fy: 0.4052179236965703
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1423442698700709
+      fy: 0.31378004495404255
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13828620043915535
+      fy: -0.2413489919654101
+      fz: 0.0
+      mx: -1.5687008628009732e-05
+      my: 8.988215785133998e-06
+      mz: 1.2433772637920164
+  - name: bearing
+    force_moment:
+      fx: -0.13227310287501004
+      fy: -0.23085441599786105
+      fz: 0.0
+      mx: -1.5687008628009312e-05
+      my: 8.988215785133756e-06
+      mz: 1.2433772637920164
+  - name: nozzle
+    force_moment:
+      fx: -0.06895575381352982
+      fy: -0.12034752288644511
+      fz: 0.0
+      mx: -1.5687008628009312e-05
+      my: 8.988215785133756e-06
+      mz: 1.2433772637920164
+  - name: plug
+    force_moment:
+      fx: -0.07245060471441117
+      fy: -0.12644703780089667
+      fz: 0.0
+      mx: -1.5687008628009312e-05
+      my: 8.988215785133756e-06
+      mz: 1.2433772637920164
+- name: Limit_41
+  description: Balanced load case 41
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.20705810240898095
+      fy: 0.38947766451133214
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.19488484471861067
+      fy: 0.3025252937193922
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13492183475656655
+      fy: -0.23228746629077737
+      fz: 0.0
+      mx: -1.5098034834154855e-05
+      my: 8.769541437406664e-06
+      mz: 1.2202449019326205
+  - name: bearing
+    force_moment:
+      fx: -0.1290550298737602
+      fy: -0.22218691255965844
+      fz: 0.0
+      mx: -1.5098034834154448e-05
+      my: 8.769541437406428e-06
+      mz: 1.2202449019326205
+  - name: nozzle
+    force_moment:
+      fx: -0.06727812892087381
+      fy: -0.1158290363593911
+      fz: 0.0
+      mx: -1.5098034834154448e-05
+      my: 8.769541437406428e-06
+      mz: 1.2202449019326205
+  - name: plug
+    force_moment:
+      fx: -0.07068795357634411
+      fy: -0.12169954302089728
+      fz: 0.0
+      mx: -1.5098034834154448e-05
+      my: 8.769541437406428e-06
+      mz: 1.2202449019326205
+- name: Limit_42
+  description: Balanced load case 42
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.11462135807356016
+      fy: 0.35637558906169564
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.12823329527597224
+      fy: 0.21228702734583113
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.08152001582106425
+      fy: -0.1908853087526062
+      fz: 0.0
+      mx: -1.2407010532662883e-05
+      my: 5.298572747737211e-06
+      mz: 0.45021971521051
+  - name: bearing
+    force_moment:
+      fx: -0.07797528173317538
+      fy: -0.18258504465172956
+      fz: 0.0
+      mx: -1.2407010532662551e-05
+      my: 5.298572747737068e-06
+      mz: 0.45021971521051
+  - name: nozzle
+    force_moment:
+      fx: -0.040649566795288854
+      fy: -0.09518404811519994
+      fz: 0.0
+      mx: -1.2407010532662551e-05
+      my: 5.298572747737068e-06
+      mz: 0.45021971521051
+  - name: plug
+    force_moment:
+      fx: -0.04270978899994955
+      fy: -0.10000821488799119
+      fz: 0.0
+      mx: -1.2407010532662551e-05
+      my: 5.298572747737068e-06
+      mz: 0.45021971521051
+- name: Limit_43
+  description: Balanced load case 43
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1116471769028085
+      fy: 0.3284520537517718
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1731730165461804
+      fy: 0.20817001446206315
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.09560676048807668
+      fy: -0.1801301267552509
+      fz: 0.0
+      mx: -1.170795382057822e-05
+      my: 6.214171704021604e-06
+      mz: 0.6809801542289314
+  - name: bearing
+    force_moment:
+      fx: -0.09144949261312925
+      fy: -0.17229753013289523
+      fz: 0.0
+      mx: -1.1707953820577903e-05
+      my: 6.214171704021436e-06
+      mz: 0.6809801542289314
+  - name: nozzle
+    force_moment:
+      fx: -0.04767385478717964
+      fy: -0.08982102794662841
+      fz: 0.0
+      mx: -1.1707953820577903e-05
+      my: 6.214171704021436e-06
+      mz: 0.6809801542289314
+  - name: plug
+    force_moment:
+      fx: -0.050090085560583086
+      fy: -0.09437338337906033
+      fz: 0.0
+      mx: -1.1707953820577903e-05
+      my: 6.214171704021436e-06
+      mz: 0.6809801542289314
+- name: Limit_44
+  description: Balanced load case 44
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.21315155664035768
+      fy: 0.25830577687744266
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.17324056238830557
+      fy: 0.22896589658848318
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.12970182461707744
+      fy: -0.16356447769249152
+      fz: 0.0
+      mx: -1.0631233020296869e-05
+      my: 8.430255395754742e-06
+      mz: 1.3435690148743804
+  - name: bearing
+    force_moment:
+      fx: -0.12406200138662304
+      fy: -0.1564522050338912
+      fz: 0.0
+      mx: -1.0631233020296583e-05
+      my: 8.430255395754516e-06
+      mz: 1.3435690148743804
+  - name: nozzle
+    force_moment:
+      fx: -0.06467519578130206
+      fy: -0.08156064610921455
+      fz: 0.0
+      mx: -1.0631233020296583e-05
+      my: 8.430255395754516e-06
+      mz: 1.3435690148743804
+  - name: plug
+    force_moment:
+      fx: -0.06795309724348576
+      fy: -0.08569434463032881
+      fz: 0.0
+      mx: -1.0631233020296583e-05
+      my: 8.430255395754516e-06
+      mz: 1.3435690148743804
+- name: Limit_45
+  description: Balanced load case 45
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2339823298799762
+      fy: 0.27245048743799105
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.19025368859125533
+      fy: 0.20997828630210671
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.14240504128932027
+      fy: -0.16193884171300169
+      fz: 0.0
+      mx: -1.0525571233899443e-05
+      my: 9.255928906666635e-06
+      mz: 1.3807961060625562
+  - name: bearing
+    force_moment:
+      fx: -0.13621284420670984
+      fy: -0.15489725656854186
+      fz: 0.0
+      mx: -1.052557123389916e-05
+      my: 9.255928906666386e-06
+      mz: 1.3807961060625562
+  - name: nozzle
+    force_moment:
+      fx: -0.07100959414222341
+      fy: -0.08075003048719222
+      fz: 0.0
+      mx: -1.052557123389916e-05
+      my: 9.255928906666386e-06
+      mz: 1.3807961060625562
+  - name: plug
+    force_moment:
+      fx: -0.07460853883283261
+      fy: -0.08484264497136215
+      fz: 0.0
+      mx: -1.052557123389916e-05
+      my: 9.255928906666386e-06
+      mz: 1.3807961060625562
+- name: Limit_46
+  description: Balanced load case 46
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1739221283237616
+      fy: 0.23025256497836552
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.19900142839156706
+      fy: 0.2974991114701202
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1251807771604536
+      fy: -0.17715256603289808
+      fz: 0.0
+      mx: -1.1514420711690488e-05
+      my: 8.136399971381807e-06
+      mz: 1.5953001728080645
+  - name: bearing
+    force_moment:
+      fx: -0.11973754259439578
+      fy: -0.16944944265567288
+      fz: 0.0
+      mx: -1.151442071169018e-05
+      my: 8.136399971381586e-06
+      mz: 1.5953001728080645
+  - name: nozzle
+    force_moment:
+      fx: -0.06242079704586654
+      fy: -0.08833628150430482
+      fz: 0.0
+      mx: -1.151442071169018e-05
+      my: 8.136399971381586e-06
+      mz: 1.5953001728080645
+  - name: plug
+    force_moment:
+      fx: -0.06558443991444848
+      fy: -0.09281338625560988
+      fz: 0.0
+      mx: -1.151442071169018e-05
+      my: 8.136399971381586e-06
+      mz: 1.5953001728080645
+- name: Limit_47
+  description: Balanced load case 47
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.14999619976228226
+      fy: 0.32850986074183336
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1798135992184041
+      fy: 0.25283636453957686
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1107086055788953
+      fy: -0.19514286767442107
+      fz: 0.0
+      mx: -1.2683739940135758e-05
+      my: 7.195749345010465e-06
+      mz: 0.9876634208053962
+  - name: bearing
+    force_moment:
+      fx: -0.10589466431479631
+      fy: -0.18665747217864018
+      fz: 0.0
+      mx: -1.2683739940135416e-05
+      my: 7.195749345010271e-06
+      mz: 0.9876634208053962
+  - name: nozzle
+    force_moment:
+      fx: -0.05520431776231276
+      fy: -0.0973070595502632
+      fz: 0.0
+      mx: -1.2683739940135416e-05
+      my: 7.195749345010271e-06
+      mz: 0.9876634208053962
+  - name: plug
+    force_moment:
+      fx: -0.0580022113245167
+      fy: -0.1022388258780859
+      fz: 0.0
+      mx: -1.2683739940135416e-05
+      my: 7.195749345010271e-06
+      mz: 0.9876634208053962
+- name: Limit_48
+  description: Balanced load case 48
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.21605661235852616
+      fy: 0.2605839346489999
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.11468554766848955
+      fy: 0.30396847002921124
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.11102157502801957
+      fy: -0.18950561715278638
+      fz: 0.0
+      mx: -1.2317334442225893e-05
+      my: 7.216091482666344e-06
+      mz: 1.3635392954120877
+  - name: bearing
+    force_moment:
+      fx: -0.10619402491636812
+      fy: -0.18126534616888193
+      fz: 0.0
+      mx: -1.231733444222556e-05
+      my: 7.216091482666151e-06
+      mz: 1.3635392954120877
+  - name: nozzle
+    force_moment:
+      fx: -0.055360378485309746
+      fy: -0.09449607148420848
+      fz: 0.0
+      mx: -1.231733444222556e-05
+      my: 7.216091482666151e-06
+      mz: 1.3635392954120877
+  - name: plug
+    force_moment:
+      fx: -0.05816618159706302
+      fy: -0.09928536987233438
+      fz: 0.0
+      mx: -1.231733444222556e-05
+      my: 7.216091482666151e-06
+      mz: 1.3635392954120877
+- name: Limit_49
+  description: Balanced load case 49
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.327641620133443
+      fy: 0.3820801970999542
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.15663961482859323
+      fy: 0.2748103779160707
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1625606649542224
+      fy: -0.22050114885475566
+      fz: 0.0
+      mx: -1.4331957206045958e-05
+      my: 1.0565988002965416e-05
+      mz: 1.4632598352323511
+  - name: bearing
+    force_moment:
+      fx: -0.15549204107577677
+      fy: -0.21091309945482412
+      fz: 0.0
+      mx: -1.4331957206045574e-05
+      my: 1.0565988002965131e-05
+      mz: 1.4632598352323511
+  - name: nozzle
+    force_moment:
+      fx: -0.08106009968094745
+      fy: -0.1099518454259323
+      fz: 0.0
+      mx: -1.4331957206045574e-05
+      my: 1.0565988002965131e-05
+      mz: 1.4632598352323511
+  - name: plug
+    force_moment:
+      fx: -0.08516842925086496
+      fy: -0.11552448128051264
+      fz: 0.0
+      mx: -1.4331957206045574e-05
+      my: 1.0565988002965131e-05
+      mz: 1.4632598352323511
+- name: Limit_50
+  description: Balanced load case 50
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2644298890434235
+      fy: 0.40919314147203967
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.20351553583226742
+      fy: 0.29979965622536275
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.15707715669822192
+      fy: -0.23799051526688741
+      fz: 0.0
+      mx: -1.546871704735045e-05
+      my: 1.0209575321831193e-05
+      mz: 1.3955741175310152
+  - name: bearing
+    force_moment:
+      fx: -0.15024697215812677
+      fy: -0.22764197591030924
+      fz: 0.0
+      mx: -1.5468717047350032e-05
+      my: 1.0209575321830918e-05
+      mz: 1.3955741175310152
+  - name: nozzle
+    force_moment:
+      fx: -0.07832577446157833
+      fy: -0.11867283451071202
+      fz: 0.0
+      mx: -1.5468717047350032e-05
+      my: 1.0209575321830918e-05
+      mz: 1.3955741175310152
+  - name: plug
+    force_moment:
+      fx: -0.08229552155756283
+      fy: -0.12468747200949407
+      fz: 0.0
+      mx: -1.5468717047350032e-05
+      my: 1.0209575321830918e-05
+      mz: 1.3955741175310152
+- name: Limit_51
+  description: Balanced load case 51
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2467400468757822
+      fy: 0.23423234083186523
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.12548703196322697
+      fy: 0.31312153159569484
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.12494698758091725
+      fy: -0.18373251541542113
+      fz: 0.0
+      mx: -1.194209899571782e-05
+      my: 8.121204303543949e-06
+      mz: 1.6290202670076122
+  - name: bearing
+    force_moment:
+      fx: -0.1195139188848658
+      fy: -0.17574327616054017
+      fz: 0.0
+      mx: -1.1942098995717499e-05
+      my: 8.121204303543729e-06
+      mz: 1.6290202670076122
+  - name: nozzle
+    force_moment:
+      fx: -0.062304218986742876
+      fy: -0.09161734185784641
+      fz: 0.0
+      mx: -1.1942098995717499e-05
+      my: 8.121204303543729e-06
+      mz: 1.6290202670076122
+  - name: plug
+    force_moment:
+      fx: -0.06546195338642484
+      fy: -0.09626073899375269
+      fz: 0.0
+      mx: -1.1942098995717499e-05
+      my: 8.121204303543729e-06
+      mz: 1.6290202670076122
+- name: Limit_52
+  description: Balanced load case 52
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.22705840340049313
+      fy: 0.20710471155471777
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.11302051755183731
+      fy: 0.2732983438333277
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.11415568379645831
+      fy: -0.16125886053977073
+      fz: 0.0
+      mx: -1.0481374361791172e-05
+      my: 7.41979977629196e-06
+      mz: 1.4700297940166003
+  - name: bearing
+    force_moment:
+      fx: -0.10919185326236505
+      fy: -0.15424684301032715
+      fz: 0.0
+      mx: -1.0481374361790889e-05
+      my: 7.4197997762917585e-06
+      mz: 1.4700297940166003
+  - name: nozzle
+    force_moment:
+      fx: -0.05692318686265569
+      fy: -0.08041096112070613
+      fz: 0.0
+      mx: -1.0481374361790889e-05
+      my: 7.4197997762917585e-06
+      mz: 1.4700297940166003
+  - name: plug
+    force_moment:
+      fx: -0.059808197030682804
+      fy: -0.08448639071724141
+      fz: 0.0
+      mx: -1.0481374361790889e-05
+      my: 7.4197997762917585e-06
+      mz: 1.4700297940166003
+- name: Limit_53
+  description: Balanced load case 53
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.10560499409677065
+      fy: 0.24271718803850695
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.16191493068826093
+      fy: 0.28142862727411383
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.0897995084710832
+      fy: -0.17594217186176928
+      fz: 0.0
+      mx: -1.1435748480034745e-05
+      my: 5.836716584745532e-06
+      mz: 1.1138793120210102
+  - name: bearing
+    force_moment:
+      fx: -0.0858947572815993
+      fy: -0.16829168004300282
+      fz: 0.0
+      mx: -1.1435748480034436e-05
+      my: 5.836716584745374e-06
+      mz: 1.1138793120210102
+  - name: nozzle
+    force_moment:
+      fx: -0.04477809628860179
+      fy: -0.08773272422807443
+      fz: 0.0
+      mx: -1.1435748480034436e-05
+      my: 5.836716584745374e-06
+      mz: 1.1138793120210102
+  - name: plug
+    force_moment:
+      fx: -0.04704756274357108
+      fy: -0.09217923917977416
+      fz: 0.0
+      mx: -1.1435748480034436e-05
+      my: 5.836716584745374e-06
+      mz: 1.1138793120210102
+- name: Limit_54
+  description: Balanced load case 54
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2928954802859167
+      fy: 0.31128038763090776
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.21766771722370637
+      fy: 0.284419350301999
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.17138283893093698
+      fy: -0.19996097003443553
+      fz: 0.0
+      mx: -1.2996903101401401e-05
+      my: 1.1139404606865642e-05
+      mz: 1.812816343026356
+  - name: bearing
+    force_moment:
+      fx: -0.16393060054360792
+      fy: -0.19126606903865306
+      fz: 0.0
+      mx: -1.2996903101401054e-05
+      my: 1.113940460686534e-05
+      mz: 1.812816343026356
+  - name: nozzle
+    force_moment:
+      fx: -0.08545923462507621
+      fy: -0.09970958329531496
+      fz: 0.0
+      mx: -1.2996903101401054e-05
+      my: 1.113940460686534e-05
+      mz: 1.812816343026356
+  - name: plug
+    force_moment:
+      fx: -0.08979052340988433
+      fy: -0.10476311556450303
+      fz: 0.0
+      mx: -1.2996903101401054e-05
+      my: 1.113940460686534e-05
+      mz: 1.812816343026356
+- name: Limit_55
+  description: Balanced load case 55
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.19379794419926247
+      fy: 0.4100636874818004
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1936610015921836
+      fy: 0.33448863668692336
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13005993072354674
+      fy: -0.24992692711061845
+      fz: 0.0
+      mx: -1.6244550391650745e-05
+      my: 8.453531289697092e-06
+      mz: 1.2016682731362633
+  - name: bearing
+    force_moment:
+      fx: -0.12440453596871932
+      fy: -0.239059356869122
+      fz: 0.0
+      mx: -1.624455039165031e-05
+      my: 8.453531289696863e-06
+      mz: 1.2016682731362633
+  - name: nozzle
+    force_moment:
+      fx: -0.06485376368339237
+      fy: -0.12462486930417738
+      fz: 0.0
+      mx: -1.624455039165031e-05
+      my: 8.453531289696863e-06
+      mz: 1.2016682731362633
+  - name: plug
+    force_moment:
+      fx: -0.06814071541549145
+      fy: -0.130941170884806
+      fz: 0.0
+      mx: -1.624455039165031e-05
+      my: 8.453531289696863e-06
+      mz: 1.2016682731362633
+- name: Limit_56
+  description: Balanced load case 56
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.26876186260773366
+      fy: 0.3641126875656943
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.12695870512657367
+      fy: 0.2748551409493621
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1328331431882483
+      fy: -0.21448494715480104
+      fz: 0.0
+      mx: -1.3940920942722644e-05
+      my: 8.633782334288188e-06
+      mz: 1.1901470939649819
+  - name: bearing
+    force_moment:
+      fx: -0.1270571608615295
+      fy: -0.20515850019729975
+      fz: 0.0
+      mx: -1.394092094272227e-05
+      my: 8.633782334287954e-06
+      mz: 1.1901470939649819
+  - name: nozzle
+    force_moment:
+      fx: -0.06623661284073931
+      fy: -0.10695189516353888
+      fz: 0.0
+      mx: -1.394092094272227e-05
+      my: 8.633782334287954e-06
+      mz: 1.1901470939649819
+  - name: plug
+    force_moment:
+      fx: -0.06959365084364377
+      fy: -0.11237248599941674
+      fz: 0.0
+      mx: -1.394092094272227e-05
+      my: 8.633782334287954e-06
+      mz: 1.1901470939649819
+- name: Limit_57
+  description: Balanced load case 57
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.15505268843371053
+      fy: 0.2520691868400582
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.19989521971114474
+      fy: 0.24245627795058788
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.11914681760649197
+      fy: -0.16599938752601154
+      fz: 0.0
+      mx: -1.078949534099596e-05
+      my: 7.744209497323165e-06
+      mz: 1.288221166505617
+  - name: bearing
+    force_moment:
+      fx: -0.11396595764743273
+      fy: -0.15878123770582087
+      fz: 0.0
+      mx: -1.0789495340995668e-05
+      my: 7.744209497322956e-06
+      mz: 1.288221166505617
+  - name: nozzle
+    force_moment:
+      fx: -0.059411991913961966
+      fy: -0.08277480227589187
+      fz: 0.0
+      mx: -1.0789495340995668e-05
+      my: 7.744209497322956e-06
+      mz: 1.288221166505617
+  - name: plug
+    force_moment:
+      fx: -0.06242314097683801
+      fy: -0.086970037282922
+      fz: 0.0
+      mx: -1.0789495340995668e-05
+      my: 7.744209497322956e-06
+      mz: 1.288221166505617
+- name: Limit_58
+  description: Balanced load case 58
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.3344557062417972
+      fy: 0.3919004138958402
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.21561235860405797
+      fy: 0.3006441319539487
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.18464359949610387
+      fy: -0.2324692632243177
+      fz: 0.0
+      mx: -1.510985112574895e-05
+      my: 1.2001316909431925e-05
+      mz: 1.7579505235396078
+  - name: bearing
+    force_moment:
+      fx: -0.1766147435807844
+      fy: -0.2223608044188325
+      fz: 0.0
+      mx: -1.5109851125748541e-05
+      my: 1.2001316909431603e-05
+      mz: 1.7579505235396078
+  - name: nozzle
+    force_moment:
+      fx: -0.09207164958778478
+      fy: -0.11591968853258505
+      fz: 0.0
+      mx: -1.5109851125748541e-05
+      my: 1.2001316909431603e-05
+      mz: 1.7579505235396078
+  - name: plug
+    force_moment:
+      fx: -0.09673807218102758
+      fy: -0.12179478967405366
+      fz: 0.0
+      mx: -1.5109851125748541e-05
+      my: 1.2001316909431603e-05
+      mz: 1.7579505235396078
+- name: Limit_59
+  description: Balanced load case 59
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.21765078653571115
+      fy: 0.3016496222323964
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.12078402729775531
+      fy: 0.2751145448779142
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.113603799628686
+      fy: -0.19360478944758427
+      fz: 0.0
+      mx: -1.2583769162472923e-05
+      my: 7.383928850894578e-06
+      mz: 1.1734471686344377
+  - name: bearing
+    force_moment:
+      fx: -0.10866396666867048
+      fy: -0.18518627419300143
+      fz: 0.0
+      mx: -1.2583769162472583e-05
+      my: 7.383928850894379e-06
+      mz: 1.1734471686344377
+  - name: nozzle
+    force_moment:
+      fx: -0.05664799245602462
+      fy: -0.09654010418368734
+      fz: 0.0
+      mx: -1.2583769162472583e-05
+      my: 7.383928850894379e-06
+      mz: 1.1734471686344377
+  - name: plug
+    force_moment:
+      fx: -0.059519055079963176
+      fy: -0.10143299928603784
+      fz: 0.0
+      mx: -1.2583769162472583e-05
+      my: 7.383928850894379e-06
+      mz: 1.1734471686344377
+- name: Limit_60
+  description: Balanced load case 60
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1691770481597448
+      fy: 0.22194785563621505
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.17826972318791576
+      fy: 0.23586718483970504
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.11662888030454352
+      fy: -0.15367664909100606
+      fz: 0.0
+      mx: -9.988551850093171e-06
+      my: 7.580550623503022e-06
+      mz: 1.3340835813972058
+  - name: bearing
+    force_moment:
+      fx: -0.11155750778982743
+      fy: -0.1469943287913006
+      fz: 0.0
+      mx: -9.988551850092903e-06
+      my: 7.580550623502818e-06
+      mz: 1.3340835813972058
+  - name: nozzle
+    force_moment:
+      fx: -0.058156434497792876
+      fy: -0.07663012757162381
+      fz: 0.0
+      mx: -9.988551850092903e-06
+      my: 7.580550623502818e-06
+      mz: 1.3340835813972058
+  - name: plug
+    force_moment:
+      fx: -0.06110394875524362
+      fy: -0.08051393502198956
+      fz: 0.0
+      mx: -9.988551850092903e-06
+      my: 7.580550623502818e-06
+      mz: 1.3340835813972058
+- name: Limit_61
+  description: Balanced load case 61
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.3713843770179654
+      fy: 0.503769115745655
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.24684872108120065
+      fy: 0.30554155526918597
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.20752483530016316
+      fy: -0.2716646265397129
+      fz: 0.0
+      mx: -1.765743998244771e-05
+      my: 1.3488533162446696e-05
+      mz: 1.6764833489669262
+  - name: bearing
+    force_moment:
+      fx: -0.19850103482163559
+      fy: -0.2598518361166005
+      fz: 0.0
+      mx: -1.7657439982447235e-05
+      my: 1.3488533162446333e-05
+      mz: 1.6764833489669262
+  - name: nozzle
+    force_moment:
+      fx: -0.10348126860879574
+      fy: -0.1354642693706035
+      fz: 0.0
+      mx: -1.7657439982447235e-05
+      my: 1.3488533162446333e-05
+      mz: 1.6764833489669262
+  - name: plug
+    force_moment:
+      fx: -0.10872595936848048
+      fy: -0.1423299389879241
+      fz: 0.0
+      mx: -1.7657439982447235e-05
+      my: 1.3488533162446333e-05
+      mz: 1.6764833489669262
+- name: Limit_62
+  description: Balanced load case 62
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1207461772827927
+      fy: 0.45171036232663775
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1672767123705541
+      fy: 0.3474707834088274
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.09668182263614794
+      fy: -0.2682644073153761
+      fz: 0.0
+      mx: -1.74364352545021e-05
+      my: 6.2840477331851366e-06
+      mz: 0.741757633097021
+  - name: bearing
+    force_moment:
+      fx: -0.09247780784381447
+      fy: -0.25659946859309546
+      fz: 0.0
+      mx: -1.743643525450163e-05
+      my: 6.284047733184966e-06
+      mz: 0.741757633097021
+  - name: nozzle
+    force_moment:
+      fx: -0.048209929395772184
+      fy: -0.13376876628361029
+      fz: 0.0
+      mx: -1.743643525450163e-05
+      my: 6.284047733184966e-06
+      mz: 0.741757633097021
+  - name: plug
+    force_moment:
+      fx: -0.05065332977761739
+      fy: -0.14054850354338363
+      fz: 0.0
+      mx: -1.743643525450163e-05
+      my: 6.284047733184966e-06
+      mz: 0.741757633097021
+- name: Limit_63
+  description: Balanced load case 63
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.3346563944841416
+      fy: 0.4236902153692821
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1479877310521236
+      fy: 0.27267604256591865
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.16201112973044096
+      fy: -0.23375211296745108
+      fz: 0.0
+      mx: -1.5193232766687811e-05
+      my: 1.0530269752295128e-05
+      mz: 1.3201724750862405
+  - name: bearing
+    force_moment:
+      fx: -0.15496640128699996
+      fy: -0.223587872018545
+      fz: 0.0
+      mx: -1.5193232766687403e-05
+      my: 1.0530269752294843e-05
+      mz: 1.3201724750862405
+  - name: nozzle
+    force_moment:
+      fx: -0.08078607656444685
+      fy: -0.116559375433964
+      fz: 0.0
+      mx: -1.5193232766687403e-05
+      my: 1.0530269752294843e-05
+      mz: 1.3201724750862405
+  - name: plug
+    force_moment:
+      fx: -0.08488051795416073
+      fy: -0.12246689751524073
+      fz: 0.0
+      mx: -1.5193232766687403e-05
+      my: 1.0530269752294843e-05
+      mz: 1.3201724750862405
+- name: Limit_64
+  description: Balanced load case 64
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.3205704472816721
+      fy: 0.3124526816033188
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.13873682093053696
+      fy: 0.30331310725082017
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1541775512842036
+      fy: -0.20669662350457815
+      fz: 0.0
+      mx: -1.343470171510606e-05
+      my: 1.0021109089839294e-05
+      mz: 1.6774143345805896
+  - name: bearing
+    force_moment:
+      fx: -0.1474734502591915
+      fy: -0.19770883615174945
+      fz: 0.0
+      mx: -1.3434701715105699e-05
+      my: 1.0021109089839024e-05
+      mz: 1.6774143345805896
+  - name: nozzle
+    force_moment:
+      fx: -0.07687990006050013
+      fy: -0.10306828474897112
+      fz: 0.0
+      mx: -1.3434701715105699e-05
+      my: 1.0021109089839024e-05
+      mz: 1.6774143345805896
+  - name: plug
+    force_moment:
+      fx: -0.08077636660821923
+      fy: -0.10829204444884026
+      fz: 0.0
+      mx: -1.3434701715105699e-05
+      my: 1.0021109089839024e-05
+      mz: 1.6774143345805896
+- name: Limit_65
+  description: Balanced load case 65
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.3560684321109588
+      fy: 0.4204997131095548
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1946340426569618
+      fy: 0.25997836703682337
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.18485655447226837
+      fy: -0.228418863277335
+      fz: 0.0
+      mx: -1.484658647153277e-05
+      my: 1.2015158386568148e-05
+      mz: 1.5437628509366195
+  - name: bearing
+    force_moment:
+      fx: -0.17681843863769
+      fy: -0.2184865279749827
+      fz: 0.0
+      mx: -1.4846586471532372e-05
+      my: 1.2015158386567827e-05
+      mz: 1.5437628509366195
+  - name: nozzle
+    force_moment:
+      fx: -0.09217783857003535
+      fy: -0.11389997593155331
+      fz: 0.0
+      mx: -1.4846586471532372e-05
+      my: 1.2015158386567827e-05
+      mz: 1.5437628509366195
+  - name: plug
+    force_moment:
+      fx: -0.09684964308778857
+      fy: -0.11967271296250742
+      fz: 0.0
+      mx: -1.4846586471532372e-05
+      my: 1.2015158386567827e-05
+      mz: 1.5437628509366195
+- name: Limit_66
+  description: Balanced load case 66
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2714185345177427
+      fy: 0.4844251110422808
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.13876140227299555
+      fy: 0.3065098267123415
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1376867788005985
+      fy: -0.2654963689195948
+      fz: 0.0
+      mx: -1.7256520510116043e-05
+      my: 8.949255057357137e-06
+      mz: 0.9659387018856874
+  - name: bearing
+    force_moment:
+      fx: -0.1316997458818615
+      fy: -0.25395179278507163
+      fz: 0.0
+      mx: -1.725652051011558e-05
+      my: 8.949255057356898e-06
+      mz: 0.9659387018856874
+  - name: nozzle
+    force_moment:
+      fx: -0.06865685507319902
+      fy: -0.13238849714938267
+      fz: 0.0
+      mx: -1.725652051011558e-05
+      my: 8.949255057356898e-06
+      mz: 0.9659387018856874
+  - name: plug
+    force_moment:
+      fx: -0.07213655703486652
+      fy: -0.13909827890057339
+      fz: 0.0
+      mx: -1.725652051011558e-05
+      my: 8.949255057356898e-06
+      mz: 0.9659387018856874
+- name: Limit_67
+  description: Balanced load case 67
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2844760470394606
+      fy: 0.35953002514845456
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1752467576146015
+      fy: 0.27907906908750824
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.15431703610054567
+      fy: -0.21436452935055406
+      fz: 0.0
+      mx: -1.3933094122652579e-05
+      my: 1.0030175211857956e-05
+      mz: 1.4558389759415449
+  - name: bearing
+    force_moment:
+      fx: -0.14760686985886207
+      fy: -0.20504331851931226
+      fz: 0.0
+      mx: -1.3933094122652204e-05
+      my: 1.0030175211857686e-05
+      mz: 1.4558389759415449
+  - name: nozzle
+    force_moment:
+      fx: -0.07694945350183487
+      fy: -0.10689184940020505
+      fz: 0.0
+      mx: -1.3933094122652204e-05
+      my: 1.0030175211857686e-05
+      mz: 1.4558389759415449
+  - name: plug
+    force_moment:
+      fx: -0.08084944519241456
+      fy: -0.11230939696589147
+      fz: 0.0
+      mx: -1.3933094122652204e-05
+      my: 1.0030175211857686e-05
+      mz: 1.4558389759415449
+- name: Limit_68
+  description: Balanced load case 68
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.16609883746850185
+      fy: 0.24998989365526472
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.17483180836657966
+      fy: 0.27153075825648415
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1144415857751856
+      fy: -0.1750609725146636
+      fz: 0.0
+      mx: -1.1378472990095895e-05
+      my: 7.43838260431144e-06
+      mz: 1.3333542785579997
+  - name: bearing
+    force_moment:
+      fx: -0.10946532336800763
+      fy: -0.167448797878892
+      fz: 0.0
+      mx: -1.137847299009559e-05
+      my: 7.4383826043112395e-06
+      mz: 1.3333542785579997
+  - name: nozzle
+    force_moment:
+      fx: -0.0570657505196341
+      fy: -0.08729331837959939
+      fz: 0.0
+      mx: -1.137847299009559e-05
+      my: 7.4383826043112395e-06
+      mz: 1.3333542785579997
+  - name: plug
+    force_moment:
+      fx: -0.05995798617209518
+      fy: -0.0917175631385939
+      fz: 0.0
+      mx: -1.137847299009559e-05
+      my: 7.4383826043112395e-06
+      mz: 1.3333542785579997
+- name: Limit_69
+  description: Balanced load case 69
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.29031503322771823
+      fy: 0.4063007399381438
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1604763013559853
+      fy: 0.26561425329937277
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.15131897297586713
+      fy: -0.2255444568343732
+      fz: 0.0
+      mx: -1.4659758101942582e-05
+      my: 9.835309504666426e-06
+      mz: 1.234068479703377
+  - name: bearing
+    force_moment:
+      fx: -0.14473917148479257
+      fy: -0.2157371093205823
+      fz: 0.0
+      mx: -1.4659758101942187e-05
+      my: 9.83530950466616e-06
+      mz: 1.234068479703377
+  - name: nozzle
+    force_moment:
+      fx: -0.0754544836310981
+      fy: -0.11246666687829246
+      fz: 0.0
+      mx: -1.4659758101942187e-05
+      my: 9.83530950466616e-06
+      mz: 1.234068479703377
+  - name: plug
+    force_moment:
+      fx: -0.07927870649184443
+      fy: -0.11816676020426872
+      fz: 0.0
+      mx: -1.4659758101942187e-05
+      my: 9.83530950466616e-06
+      mz: 1.234068479703377
+- name: Limit_70
+  description: Balanced load case 70
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2715316388613265
+      fy: 0.34508131697963274
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.17797873047532314
+      fy: 0.2923626990791956
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.15088898612741078
+      fy: -0.2139734427885988
+      fz: 0.0
+      mx: -1.3907674591285421e-05
+      my: 9.807361563743719e-06
+      mz: 1.504570364227174
+  - name: bearing
+    force_moment:
+      fx: -0.14432788175036887
+      fy: -0.20466923757068448
+      fz: 0.0
+      mx: -1.3907674591285047e-05
+      my: 9.807361563743453e-06
+      mz: 1.504570364227174
+  - name: nozzle
+    force_moment:
+      fx: -0.07524007274040218
+      fy: -0.10669683595273974
+      fz: 0.0
+      mx: -1.3907674591285047e-05
+      my: 9.807361563743453e-06
+      mz: 1.504570364227174
+  - name: plug
+    force_moment:
+      fx: -0.0790534287184605
+      fy: -0.1121044997468054
+      fz: 0.0
+      mx: -1.3907674591285047e-05
+      my: 9.807361563743453e-06
+      mz: 1.504570364227174
+- name: Limit_71
+  description: Balanced load case 71
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2853915183629846
+      fy: 0.27471295101418136
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.14121517942327305
+      fy: 0.21496488799619565
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.14320081691989814
+      fy: -0.16437216513247788
+      fz: 0.0
+      mx: -1.068373044212822e-05
+      my: 9.307652093973548e-06
+      mz: 1.3981002211737257
+  - name: bearing
+    force_moment:
+      fx: -0.13697401713314267
+      fy: -0.15722477180845473
+      fz: 0.0
+      mx: -1.0683730442127932e-05
+      my: 9.307652093973297e-06
+      mz: 1.3981002211737257
+  - name: nozzle
+    force_moment:
+      fx: -0.07140640386425913
+      fy: -0.08196339559607778
+      fz: 0.0
+      mx: -1.0683730442127932e-05
+      my: 9.307652093973297e-06
+      mz: 1.3981002211737257
+  - name: plug
+    force_moment:
+      fx: -0.07502545986862372
+      fy: -0.08611750647336673
+      fz: 0.0
+      mx: -1.0683730442127932e-05
+      my: 9.307652093973297e-06
+      mz: 1.3981002211737257
+- name: Limit_72
+  description: Balanced load case 72
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.27461634511946287
+      fy: 0.2638337387183844
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.18662922363664888
+      fy: 0.3237803192201627
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1548281885621247
+      fy: -0.19724681672513672
+      fz: 0.0
+      mx: -1.2820490736742628e-05
+      my: 1.0063398690610159e-05
+      mz: 1.9008158608600398
+  - name: bearing
+    force_moment:
+      fx: -0.14809579588263264
+      fy: -0.18866993523239836
+      fz: 0.0
+      mx: -1.2820490736742284e-05
+      my: 1.006339869060989e-05
+      mz: 1.9008158608600398
+  - name: nozzle
+    force_moment:
+      fx: -0.0772043372360702
+      fy: -0.09835618370226584
+      fz: 0.0
+      mx: -1.2820490736742284e-05
+      my: 1.006339869060989e-05
+      mz: 1.9008158608600398
+  - name: plug
+    force_moment:
+      fx: -0.08111724707497021
+      fy: -0.10334112227874642
+      fz: 0.0
+      mx: -1.2820490736742284e-05
+      my: 1.006339869060989e-05
+      mz: 1.9008158608600398
+- name: Limit_73
+  description: Balanced load case 73
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.19678647436858182
+      fy: 0.39801404924225386
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.12891155452605121
+      fy: 0.25486429735269855
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1093283908775041
+      fy: -0.2191543477131913
+      fz: 0.0
+      mx: -1.4244418903292321e-05
+      my: 7.106039254148408e-06
+      mz: 0.760992891817932
+  - name: bearing
+    force_moment:
+      fx: -0.10457446547659054
+      fy: -0.2096248612547423
+      fz: 0.0
+      mx: -1.4244418903291938e-05
+      my: 7.106039254148218e-06
+      mz: 0.760992891817932
+  - name: nozzle
+    force_moment:
+      fx: -0.05451608029143918
+      fy: -0.1092802694649646
+      fz: 0.0
+      mx: -1.4244418903291938e-05
+      my: 7.106039254148218e-06
+      mz: 0.760992891817932
+  - name: plug
+    force_moment:
+      fx: -0.05727909224873261
+      fy: -0.11481886816205412
+      fz: 0.0
+      mx: -1.4244418903291938e-05
+      my: 7.106039254148218e-06
+      mz: 0.760992891817932
+- name: Limit_74
+  description: Balanced load case 74
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.28080175033762667
+      fy: 0.28878251246970893
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.11964328993298808
+      fy: 0.2677491388055306
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13441902622831728
+      fy: -0.18681325801825033
+      fz: 0.0
+      mx: -1.2142338637896367e-05
+      my: 8.736860290973888e-06
+      mz: 1.421490711315419
+  - name: bearing
+    force_moment:
+      fx: -0.12857408496413178
+      fy: -0.17869005886149203
+      fz: 0.0
+      mx: -1.2142338637896038e-05
+      my: 8.736860290973654e-06
+      mz: 1.421490711315419
+  - name: nozzle
+    force_moment:
+      fx: -0.06702740584902506
+      fy: -0.09315353945238208
+      fz: 0.0
+      mx: -1.2142338637896038e-05
+      my: 8.736860290973654e-06
+      mz: 1.421490711315419
+  - name: plug
+    force_moment:
+      fx: -0.07042452322901564
+      fy: -0.09787479494311527
+      fz: 0.0
+      mx: -1.2142338637896038e-05
+      my: 8.736860290973654e-06
+      mz: 1.421490711315419
+- name: Limit_75
+  description: Balanced load case 75
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2988195047611139
+      fy: 0.28607313511814764
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.19092668899087997
+      fy: 0.24533293701527042
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1643951100463002
+      fy: -0.17837925199482996
+      fz: 0.0
+      mx: -1.1594151864126547e-05
+      my: 1.068522179688104e-05
+      mz: 1.692273997605721
+  - name: bearing
+    force_moment:
+      fx: -0.15724671900906614
+      fy: -0.17062278864335836
+      fz: 0.0
+      mx: -1.1594151864126234e-05
+      my: 1.0685221796880751e-05
+      mz: 1.692273997605721
+  - name: nozzle
+    force_moment:
+      fx: -0.08197483697087057
+      fy: -0.08894796260425833
+      fz: 0.0
+      mx: -1.1594151864126234e-05
+      my: 1.0685221796880751e-05
+      mz: 1.692273997605721
+  - name: plug
+    force_moment:
+      fx: -0.08612952772548178
+      fy: -0.09345606889097159
+      fz: 0.0
+      mx: -1.1594151864126234e-05
+      my: 1.0685221796880751e-05
+      mz: 1.692273997605721
+- name: Limit_76
+  description: Balanced load case 76
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.12013977137904046
+      fy: 0.3334832173651158
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.16775211520211833
+      fy: 0.28717665751463184
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.09663784829688582
+      fy: -0.20833944139888927
+      fz: 0.0
+      mx: -1.35414802778522e-05
+      my: 6.2811895239751445e-06
+      mz: 0.923330077112216
+  - name: bearing
+    force_moment:
+      fx: -0.09243574564053678
+      fy: -0.19928021941087812
+      fz: 0.0
+      mx: -1.3541480277851836e-05
+      my: 6.281189523974974e-06
+      mz: 0.923330077112216
+  - name: nozzle
+    force_moment:
+      fx: -0.04818800180369721
+      fy: -0.10388746805081099
+      fz: 0.0
+      mx: -1.3541480277851836e-05
+      my: 6.281189523974974e-06
+      mz: 0.923330077112216
+  - name: plug
+    force_moment:
+      fx: -0.05063029083983474
+      fy: -0.10915274601916958
+      fz: 0.0
+      mx: -1.3541480277851836e-05
+      my: 6.281189523974974e-06
+      mz: 0.923330077112216
+- name: Limit_77
+  description: Balanced load case 77
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.3099156047450454
+      fy: 0.4994304871515374
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.19163545426591513
+      fy: 0.29358353668571313
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.16835769750052296
+      fy: -0.2661942642574534
+      fz: 0.0
+      mx: -1.730188175275996e-05
+      my: 1.0942778884880195e-05
+      mz: 1.2185676632401812
+  - name: bearing
+    force_moment:
+      fx: -0.16103700131001944
+      fy: -0.25461934154646076
+      fz: 0.0
+      mx: -1.7301881752759494e-05
+      my: 1.0942778884879898e-05
+      mz: 1.2185676632401812
+  - name: nozzle
+    force_moment:
+      fx: -0.08395076229220251
+      fy: -0.1327364993285571
+      fz: 0.0
+      mx: -1.7301881752759494e-05
+      my: 1.0942778884879898e-05
+      mz: 1.2185676632401812
+  - name: plug
+    force_moment:
+      fx: -0.08820559790787848
+      fy: -0.13946391870477923
+      fz: 0.0
+      mx: -1.7301881752759494e-05
+      my: 1.0942778884879898e-05
+      mz: 1.2185676632401812
+- name: Limit_78
+  description: Balanced load case 78
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.28757511383332784
+      fy: 0.28216771518709677
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.15975014703821333
+      fy: 0.2307437852859639
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1501555018205418
+      fy: -0.17217110340237052
+      fz: 0.0
+      mx: -1.1190639590299263e-05
+      my: 9.75968713744883e-06
+      mz: 1.501108960375793
+  - name: bearing
+    force_moment:
+      fx: -0.14362629153499465
+      fy: -0.16468458891826668
+      fz: 0.0
+      mx: -1.1190639590298961e-05
+      my: 9.759687137448565e-06
+      mz: 1.501108960375793
+  - name: nozzle
+    force_moment:
+      fx: -0.07487432429420444
+      fy: -0.08585229894007998
+      fz: 0.0
+      mx: -1.1190639590298961e-05
+      my: 9.759687137448565e-06
+      mz: 1.501108960375793
+  - name: plug
+    force_moment:
+      fx: -0.07866914322156564
+      fy: -0.09020350921234348
+      fz: 0.0
+      mx: -1.1190639590298961e-05
+      my: 9.759687137448565e-06
+      mz: 1.501108960375793
+- name: Limit_79
+  description: Balanced load case 79
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1097729992914974
+      fy: 0.41009897812882634
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1918157031223682
+      fy: 0.28166437215962936
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.10123551454829216
+      fy: -0.23220703611175875
+      fz: 0.0
+      mx: -1.5092807097747526e-05
+      my: 6.580024955704839e-06
+      mz: 0.7171070743237159
+  - name: bearing
+    force_moment:
+      fx: -0.09683349161303904
+      fy: -0.2221099797253641
+      fz: 0.0
+      mx: -1.5092807097747119e-05
+      my: 6.580024955704662e-06
+      mz: 0.7171070743237159
+  - name: nozzle
+    force_moment:
+      fx: -0.050480606133509694
+      fy: -0.11578893023451457
+      fz: 0.0
+      mx: -1.5092807097747119e-05
+      my: 6.580024955704662e-06
+      mz: 0.7171070743237159
+  - name: plug
+    force_moment:
+      fx: -0.05303909011898558
+      fy: -0.12165740421681843
+      fz: 0.0
+      mx: -1.5092807097747119e-05
+      my: 6.580024955704662e-06
+      mz: 0.7171070743237159
+- name: Limit_80
+  description: Balanced load case 80
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1888084526303933
+      fy: 0.24371766042889997
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.12010802645669282
+      fy: 0.2337111520766195
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.10369525934659378
+      fy: -0.16026048425380687
+      fz: 0.0
+      mx: -1.0416482698957519e-05
+      my: 6.739901479556411e-06
+      mz: 1.1157943541976834
+  - name: bearing
+    force_moment:
+      fx: -0.0991862793512169
+      fy: -0.15329187911109782
+      fz: 0.0
+      mx: -1.041648269895724e-05
+      my: 6.739901479556229e-06
+      mz: 1.1157943541976834
+  - name: nozzle
+    force_moment:
+      fx: -0.051707146136938144
+      fy: -0.0799131255509517
+      fz: 0.0
+      mx: -1.041648269895724e-05
+      my: 6.739901479556229e-06
+      mz: 1.1157943541976834
+  - name: plug
+    force_moment:
+      fx: -0.054327794252289105
+      fy: -0.08396332358966334
+      fz: 0.0
+      mx: -1.041648269895724e-05
+      my: 6.739901479556229e-06
+      mz: 1.1157943541976834
+- name: Limit_81
+  description: Balanced load case 81
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.24021810936716492
+      fy: 0.3925529199117542
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1900492469485435
+      fy: 0.2609928953530112
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.14442960515702455
+      fy: -0.21937839965443773
+      fz: 0.0
+      mx: -1.4258981652060662e-05
+      my: 9.387519888507006e-06
+      mz: 1.1863317267238664
+  - name: bearing
+    force_moment:
+      fx: -0.1381493739827453
+      fy: -0.2098391707475162
+      fz: 0.0
+      mx: -1.4258981652060278e-05
+      my: 9.387519888506753e-06
+      mz: 1.1863317267238664
+  - name: nozzle
+    force_moment:
+      fx: -0.07201913325295792
+      fy: -0.10939199189606773
+      fz: 0.0
+      mx: -1.4258981652060278e-05
+      my: 9.387519888506753e-06
+      mz: 1.1863317267238664
+  - name: plug
+    force_moment:
+      fx: -0.07566924392271432
+      fy: -0.11493625296674384
+      fz: 0.0
+      mx: -1.4258981652060278e-05
+      my: 9.387519888506753e-06
+      mz: 1.1863317267238664
+- name: Limit_82
+  description: Balanced load case 82
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.3037869276263949
+      fy: 0.36288608427972685
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.16228046965311715
+      fy: 0.27267357048859475
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1564467514851772
+      fy: -0.21334091151898224
+      fz: 0.0
+      mx: -1.3866561830038107e-05
+      my: 1.0168600748210204e-05
+      mz: 1.448935423319897
+  - name: bearing
+    force_moment:
+      fx: -0.14964397884914865
+      fy: -0.20406421065236754
+      fz: 0.0
+      mx: -1.3866561830037733e-05
+      my: 1.016860074820993e-05
+      mz: 1.448935423319897
+  - name: nozzle
+    force_moment:
+      fx: -0.07801142591176322
+      fy: -0.10638142725421268
+      fz: 0.0
+      mx: -1.3866561830037733e-05
+      my: 1.016860074820993e-05
+      mz: 1.448935423319897
+  - name: plug
+    force_moment:
+      fx: -0.08196524103315392
+      fy: -0.11177310534275928
+      fz: 0.0
+      mx: -1.3866561830037733e-05
+      my: 1.016860074820993e-05
+      mz: 1.448935423319897
+- name: Limit_83
+  description: Balanced load case 83
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.21198036560484415
+      fy: 0.2876190228094056
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.15628510475076493
+      fy: 0.3178605845429898
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.12361717823977157
+      fy: -0.20324381884467305
+      fz: 0.0
+      mx: -1.3210279081103361e-05
+      my: 8.03477041999655e-06
+      mz: 1.4618568978827315
+  - name: bearing
+    force_moment:
+      fx: -0.11824193363106333
+      fy: -0.19440616976468064
+      fz: 0.0
+      mx: -1.3210279081103005e-05
+      my: 8.034770419996333e-06
+      mz: 1.4618568978827315
+  - name: nozzle
+    force_moment:
+      fx: -0.06164111590779447
+      fy: -0.10134656018552303
+      fz: 0.0
+      mx: -1.3210279081103005e-05
+      my: 8.034770419996333e-06
+      mz: 1.4618568978827315
+  - name: plug
+    force_moment:
+      fx: -0.06476524257675394
+      fy: -0.10648305855751887
+      fz: 0.0
+      mx: -1.3210279081103005e-05
+      my: 8.034770419996333e-06
+      mz: 1.4618568978827315
+- name: Limit_84
+  description: Balanced load case 84
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.12944155823785855
+      fy: 0.2808476096357409
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.13160762616268898
+      fy: 0.2567636662904736
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.08762744855245008
+      fy: -0.18046217815822715
+      fz: 0.0
+      mx: -1.1729536231927963e-05
+      my: 5.695538772399766e-06
+      mz: 0.8933586817089214
+  - name: bearing
+    force_moment:
+      fx: -0.08381714502419521
+      fy: -0.1726151429478115
+      fz: 0.0
+      mx: -1.1729536231927647e-05
+      my: 5.695538772399611e-06
+      mz: 0.8933586817089214
+  - name: nozzle
+    force_moment:
+      fx: -0.04369500897783033
+      fy: -0.08998660379384298
+      fz: 0.0
+      mx: -1.1729536231927647e-05
+      my: 5.695538772399611e-06
+      mz: 0.8933586817089214
+  - name: plug
+    force_moment:
+      fx: -0.045909581845856924
+      fy: -0.09454735102633312
+      fz: 0.0
+      mx: -1.1729536231927647e-05
+      my: 5.695538772399611e-06
+      mz: 0.8933586817089214
+- name: Limit_85
+  description: Balanced load case 85
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.29552326725814937
+      fy: 0.3714387145099904
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.16070281630365918
+      fy: 0.22868935203072893
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.15314327741660022
+      fy: -0.20144744522934246
+      fz: 0.0
+      mx: -1.3093519826492962e-05
+      my: 9.953884184621406e-06
+      mz: 1.2481975465170936
+  - name: bearing
+    force_moment:
+      fx: -0.14648414971259852
+      fy: -0.19268790784651807
+      fz: 0.0
+      mx: -1.3093519826492608e-05
+      my: 9.953884184621137e-06
+      mz: 1.2481975465170936
+  - name: nozzle
+    force_moment:
+      fx: -0.07636416433378453
+      fy: -0.10045080705631855
+      fz: 0.0
+      mx: -1.3093519826492608e-05
+      my: 9.953884184621137e-06
+      mz: 1.2481975465170936
+  - name: plug
+    force_moment:
+      fx: -0.08023449209865964
+      fy: -0.1055419064085405
+      fz: 0.0
+      mx: -1.3093519826492608e-05
+      my: 9.953884184621137e-06
+      mz: 1.2481975465170936
+- name: Limit_86
+  description: Balanced load case 86
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2041530646966718
+      fy: 0.30335716207996616
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.12076892033509254
+      fy: 0.2505396926760773
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.10906789305903844
+      fy: -0.1859288250828745
+      fz: 0.0
+      mx: -1.2084852973774837e-05
+      my: 7.089107625852103e-06
+      mz: 1.041089087493293
+  - name: bearing
+    force_moment:
+      fx: -0.10432529488204778
+      fy: -0.17784408371519983
+      fz: 0.0
+      mx: -1.208485297377451e-05
+      my: 7.089107625851912e-06
+      mz: 1.041089087493293
+  - name: nozzle
+    force_moment:
+      fx: -0.054386184294285315
+      fy: -0.0927125211905512
+      fz: 0.0
+      mx: -1.208485297377451e-05
+      my: 7.089107625851912e-06
+      mz: 1.041089087493293
+  - name: plug
+    force_moment:
+      fx: -0.0571426127963281
+      fy: -0.09741142476741788
+      fz: 0.0
+      mx: -1.208485297377451e-05
+      my: 7.089107625851912e-06
+      mz: 1.041089087493293
+- name: Limit_87
+  description: Balanced load case 87
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2321414689390453
+      fy: 0.4174778395560989
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.2112248424711422
+      fy: 0.26421668082464245
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.14882658504514157
+      fy: -0.22882719075133373
+      fz: 0.0
+      mx: -1.4873126613902903e-05
+      my: 9.673311268343942e-06
+      mz: 1.1670675307875087
+  - name: bearing
+    force_moment:
+      fx: -0.1423551600353969
+      fy: -0.21887710014923645
+      fz: 0.0
+      mx: -1.48731266139025e-05
+      my: 9.673311268343681e-06
+      mz: 1.1670675307875087
+  - name: nozzle
+    force_moment:
+      fx: -0.07421166628760495
+      fy: -0.11410358647751921
+      fz: 0.0
+      mx: -1.48731266139025e-05
+      my: 9.673311268343681e-06
+      mz: 1.1670675307875087
+  - name: plug
+    force_moment:
+      fx: -0.07797290004176026
+      fy: -0.11988664300265203
+      fz: 0.0
+      mx: -1.48731266139025e-05
+      my: 9.673311268343681e-06
+      mz: 1.1670675307875087
+- name: Limit_88
+  description: Balanced load case 88
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1971826570176671
+      fy: 0.36655242876410066
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.16944210292061693
+      fy: 0.32199984725239744
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.12306643425770024
+      fy: -0.23112916166363157
+      fz: 0.0
+      mx: -1.5022748276991606e-05
+      my: 7.998973603656289e-06
+      mz: 1.2214387981920989
+  - name: bearing
+    force_moment:
+      fx: -0.11771513764426549
+      fy: -0.22107897448181604
+      fz: 0.0
+      mx: -1.5022748276991203e-05
+      my: 7.998973603656074e-06
+      mz: 1.2214387981920989
+  - name: nozzle
+    force_moment:
+      fx: -0.0613664900479371
+      fy: -0.11525145328564489
+      fz: 0.0
+      mx: -1.5022748276991203e-05
+      my: 7.998973603656074e-06
+      mz: 1.2214387981920989
+  - name: plug
+    force_moment:
+      fx: -0.06447669798832732
+      fy: -0.12109268658540542
+      fz: 0.0
+      mx: -1.5022748276991203e-05
+      my: 7.998973603656074e-06
+      mz: 1.2214387981920989
+- name: Limit_89
+  description: Balanced load case 89
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.22851613947462743
+      fy: 0.22935250396386214
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.10556812884882943
+      fy: 0.2605673475072743
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.11214343420414087
+      fy: -0.16445340244606407
+      fz: 0.0
+      mx: -1.068901064002235e-05
+      my: 7.289009187661648e-06
+      mz: 1.338289478992322
+  - name: bearing
+    force_moment:
+      fx: -0.10726710230033269
+      fy: -0.15730247668069167
+      fz: 0.0
+      mx: -1.0689010640022062e-05
+      my: 7.289009187661452e-06
+      mz: 1.338289478992322
+  - name: nozzle
+    force_moment:
+      fx: -0.05591978820815902
+      fy: -0.0820039041947529
+      fz: 0.0
+      mx: -1.0689010640022062e-05
+      my: 7.289009187661452e-06
+      mz: 1.338289478992322
+  - name: plug
+    force_moment:
+      fx: -0.05875394361063214
+      fy: -0.08616006814962791
+      fz: 0.0
+      mx: -1.0689010640022062e-05
+      my: 7.289009187661452e-06
+      mz: 1.338289478992322
+- name: Limit_90
+  description: Balanced load case 90
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.10228285444868866
+      fy: 0.30806109901195794
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.1884596621262184
+      fy: 0.25016257504615386
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.09759473093773882
+      fy: -0.1873812262335076
+      fz: 0.0
+      mx: -1.2179254981406149e-05
+      my: 6.3433842159585645e-06
+      mz: 0.8979974122276325
+  - name: bearing
+    force_moment:
+      fx: -0.09335102016251409
+      fy: -0.1792333301201405
+      fz: 0.0
+      mx: -1.217925498140582e-05
+      my: 6.343384215958394e-06
+      mz: 0.8979974122276325
+  - name: nozzle
+    force_moment:
+      fx: -0.04866514676623529
+      fy: -0.093436754092013
+      fz: 0.0
+      mx: -1.217925498140582e-05
+      my: 6.343384215958394e-06
+      mz: 0.8979974122276325
+  - name: plug
+    force_moment:
+      fx: -0.0511316187081357
+      fy: -0.09817236361245092
+      fz: 0.0
+      mx: -1.217925498140582e-05
+      my: 6.343384215958394e-06
+      mz: 0.8979974122276325
+- name: Limit_91
+  description: Balanced load case 91
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.17628630514792096
+      fy: 0.32616417171386186
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.14471893634926455
+      fy: 0.2526303609646609
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.10775314371959885
+      fy: -0.19428633057089062
+      fz: 0.0
+      mx: -1.2628067426967757e-05
+      my: 7.0036526003597006e-06
+      mz: 0.9616060340777858
+  - name: bearing
+    force_moment:
+      fx: -0.1030677147759595
+      fy: -0.18583817986999704
+      fz: 0.0
+      mx: -1.2628067426967416e-05
+      my: 7.003652600359512e-06
+      mz: 0.9616060340777858
+  - name: nozzle
+    force_moment:
+      fx: -0.05373059081240664
+      fy: -0.09687995141183307
+      fz: 0.0
+      mx: -1.2628067426967416e-05
+      my: 7.003652600359512e-06
+      mz: 0.9616060340777858
+  - name: plug
+    force_moment:
+      fx: -0.05645379218907031
+      fy: -0.10179007082580205
+      fz: 0.0
+      mx: -1.2628067426967416e-05
+      my: 7.003652600359512e-06
+      mz: 0.9616060340777858
+- name: Limit_92
+  description: Balanced load case 92
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.3364440059811664
+      fy: 0.32352224024017323
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.22887510182972348
+      fy: 0.33906058712224674
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.18976297953188248
+      fy: -0.2224118905059375
+      fz: 0.0
+      mx: -1.4456150062721798e-05
+      my: 1.2334062276066154e-05
+      mz: 2.1488206642045817
+  - name: bearing
+    force_moment:
+      fx: -0.18151151766212012
+      fy: -0.21274075634460118
+      fz: 0.0
+      mx: -1.4456150062721406e-05
+      my: 1.2334062276065822e-05
+      mz: 2.1488206642045817
+  - name: nozzle
+    force_moment:
+      fx: -0.09462440400699626
+      fy: -0.11090462763033607
+      fz: 0.0
+      mx: -1.4456150062721406e-05
+      my: 1.2334062276065822e-05
+      mz: 2.1488206642045817
+  - name: plug
+    force_moment:
+      fx: -0.09942020660981438
+      fy: -0.11652555288154556
+      fz: 0.0
+      mx: -1.4456150062721406e-05
+      my: 1.2334062276065822e-05
+      mz: 2.1488206642045817
+- name: Limit_93
+  description: Balanced load case 93
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.17012619149625008
+      fy: 0.2614669206822526
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.13457427070690264
+      fy: 0.24673524541002023
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.10228005169654211
+      fy: -0.17059030184911358
+      fz: 0.0
+      mx: -1.1087891916057123e-05
+      my: 6.6479169451686784e-06
+      mz: 1.0851766644462222
+  - name: bearing
+    force_moment:
+      fx: -0.09783260916231304
+      fy: -0.16317252534421237
+      fz: 0.0
+      mx: -1.1087891916056822e-05
+      my: 6.647916945168499e-06
+      mz: 1.0851766644462222
+  - name: nozzle
+    force_moment:
+      fx: -0.05100145959810626
+      fy: -0.08506403979070411
+      fz: 0.0
+      mx: -1.1087891916056822e-05
+      my: 6.647916945168499e-06
+      mz: 1.0851766644462222
+  - name: plug
+    force_moment:
+      fx: -0.053586341746044236
+      fy: -0.08937529910824281
+      fz: 0.0
+      mx: -1.1087891916056822e-05
+      my: 6.647916945168499e-06
+      mz: 1.0851766644462222
+- name: Limit_94
+  description: Balanced load case 94
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.1305154219747541
+      fy: 0.3695196237827003
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.11759466231256825
+      fy: 0.2545762191818024
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.08328412784193956
+      fy: -0.2094928068739511
+      fz: 0.0
+      mx: -1.3616445803961188e-05
+      my: 5.413235089126333e-06
+      mz: 0.5606426336354486
+  - name: bearing
+    force_moment:
+      fx: -0.07966268488744264
+      fy: -0.20038343310574055
+      fz: 0.0
+      mx: -1.3616445803960823e-05
+      my: 5.413235089126187e-06
+      mz: 0.5606426336354486
+  - name: nozzle
+    force_moment:
+      fx: -0.041529232833815176
+      fy: -0.1044625882399444
+      fz: 0.0
+      mx: -1.3616445803960823e-05
+      my: 5.413235089126187e-06
+      mz: 0.5606426336354486
+  - name: plug
+    force_moment:
+      fx: -0.04363403872412387
+      fy: -0.10975701474486686
+      fz: 0.0
+      mx: -1.3616445803960823e-05
+      my: 5.413235089126187e-06
+      mz: 0.5606426336354486
+- name: Limit_95
+  description: Balanced load case 95
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.26275108686961385
+      fy: 0.1999187665092534
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.17724824078569548
+      fy: 0.22290535682379936
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.14769637582297301
+      fy: -0.14193110466864148
+      fz: 0.0
+      mx: -9.225124353695414e-06
+      my: 9.599850833908002e-06
+      mz: 1.7069978060800373
+  - name: bearing
+    force_moment:
+      fx: -0.14127409569024585
+      fy: -0.1357595157675505
+      fz: 0.0
+      mx: -9.225124353695166e-06
+      my: 9.599850833907744e-06
+      mz: 1.7069978060800373
+  - name: nozzle
+    force_moment:
+      fx: -0.0736480928528392
+      fy: -0.07077326790681483
+      fz: 0.0
+      mx: -9.225124353695166e-06
+      my: 9.599850833907744e-06
+      mz: 1.7069978060800373
+  - name: plug
+    force_moment:
+      fx: -0.07738076328902298
+      fy: -0.07436023499004607
+      fz: 0.0
+      mx: -9.225124353695166e-06
+      my: 9.599850833907744e-06
+      mz: 1.7069978060800373
+- name: Limit_96
+  description: Balanced load case 96
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.13403360701804753
+      fy: 0.3678950860247346
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.17659779044706816
+      fy: 0.31195397718629714
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.10427091301998133
+      fy: -0.22820771858723227
+      fz: 0.0
+      mx: -1.4832862657944681e-05
+      my: 6.777317356316046e-06
+      mz: 0.9775184388448205
+  - name: bearing
+    force_moment:
+      fx: -0.09973690188129612
+      fy: -0.21828456448747133
+      fz: 0.0
+      mx: -1.4832862657944283e-05
+      my: 6.777317356315863e-06
+      mz: 0.9775184388448205
+  - name: nozzle
+    force_moment:
+      fx: -0.051994193093637224
+      fy: -0.11379468963962605
+      fz: 0.0
+      mx: -1.4832862657944283e-05
+      my: 6.777317356315863e-06
+      mz: 0.9775184388448205
+  - name: plug
+    force_moment:
+      fx: -0.05462938947014777
+      fy: -0.1195620904967022
+      fz: 0.0
+      mx: -1.4832862657944283e-05
+      my: 6.777317356315863e-06
+      mz: 0.9775184388448205
+- name: Limit_97
+  description: Balanced load case 97
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.3189801920291939
+      fy: 0.46578267410704105
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.16555470075930148
+      fy: 0.28118223939071807
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.1626458113140714
+      fy: -0.25073677084867885
+      fz: 0.0
+      mx: -1.6297187966818895e-05
+      my: 1.057152227768015e-05
+      mz: 1.2219235627696896
+  - name: bearing
+    force_moment:
+      fx: -0.15557348501741491
+      fy: -0.23983398617947035
+      fz: 0.0
+      mx: -1.6297187966818458e-05
+      my: 1.0571522277679867e-05
+      mz: 1.2219235627696896
+  - name: nozzle
+    force_moment:
+      fx: -0.08110255750873477
+      fy: -0.12502869401878117
+      fz: 0.0
+      mx: -1.6297187966818458e-05
+      my: 1.0571522277679867e-05
+      mz: 1.2219235627696896
+  - name: plug
+    force_moment:
+      fx: -0.08521303894788136
+      fy: -0.13136546245082883
+      fz: 0.0
+      mx: -1.6297187966818458e-05
+      my: 1.0571522277679867e-05
+      mz: 1.2219235627696896
+- name: Limit_98
+  description: Balanced load case 98
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.28360502375590296
+      fy: 0.40974041644763676
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.2256959056906525
+      fy: 0.2735576614127723
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.17095912823951437
+      fy: -0.22936546345605777
+      fz: 0.0
+      mx: -1.4908112832384632e-05
+      my: 1.1111864597981663e-05
+      mz: 1.4658078853688856
+  - name: bearing
+    force_moment:
+      fx: -0.16352531406053714
+      fy: -0.21939196714695922
+      fz: 0.0
+      mx: -1.4908112832384232e-05
+      my: 1.1111864597981365e-05
+      mz: 1.4658078853688856
+  - name: nozzle
+    force_moment:
+      fx: -0.0852479533147058
+      fy: -0.1143719935925573
+      fz: 0.0
+      mx: -1.4908112832384232e-05
+      my: 1.1111864597981365e-05
+      mz: 1.4658078853688856
+  - name: plug
+    force_moment:
+      fx: -0.08956853383135936
+      fy: -0.12016865366483478
+      fz: 0.0
+      mx: -1.4908112832384232e-05
+      my: 1.1111864597981365e-05
+      mz: 1.4658078853688856
+- name: Limit_99
+  description: Balanced load case 99
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.2237421667705362
+      fy: 0.4557915614265431
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.17201150652573935
+      fy: 0.37598646461157514
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.13284425586869442
+      fy: -0.27920633558956504
+      fz: 0.0
+      mx: -1.8147629951635395e-05
+      my: 8.63450462756439e-06
+      mz: 1.2188696466339686
+  - name: bearing
+    force_moment:
+      fx: -0.12706779032928428
+      fy: -0.26706560910214866
+      fz: 0.0
+      mx: -1.8147629951634908e-05
+      my: 8.634504627564159e-06
+      mz: 1.2188696466339686
+  - name: nozzle
+    force_moment:
+      fx: -0.06624215412452217
+      fy: -0.13922490659178482
+      fz: 0.0
+      mx: -1.8147629951634908e-05
+      my: 8.634504627564159e-06
+      mz: 1.2188696466339686
+  - name: plug
+    force_moment:
+      fx: -0.06959947297374446
+      fy: -0.14628117475462007
+      fz: 0.0
+      mx: -1.8147629951634908e-05
+      my: 8.634504627564159e-06
+      mz: 1.2188696466339686
+- name: Limit_100
+  description: Balanced load case 100
+  point_loads:
+  - name: lug_left
+    force_moment:
+      fx: 0.33843616667012255
+      fy: 0.3560208487171154
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_failsafe
+    force_moment:
+      fx: 0.0
+      fy: 0.0
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lug_right
+    force_moment:
+      fx: 0.21810679107400596
+      fy: 0.34313463635000463
+      fz: 0.0
+      mx: 0.0
+      my: 0.0
+      mz: 0.0
+  - name: lpt
+    force_moment:
+      fx: -0.18681705330353018
+      fy: -0.2346883842588902
+      fz: 0.0
+      mx: -1.5254087778790059e-05
+      my: 1.2142585320189779e-05
+      mz: 2.0270923404430277
+  - name: bearing
+    force_moment:
+      fx: -0.17869368911683348
+      fy: -0.2244834314341474
+      fz: 0.0
+      mx: -1.5254087778789647e-05
+      my: 1.2142585320189452e-05
+      mz: 2.0270923404430277
+  - name: nozzle
+    force_moment:
+      fx: -0.09315543195806857
+      fy: -0.11702624264462495
+      fz: 0.0
+      mx: -1.5254087778789647e-05
+      my: 1.2142585320189452e-05
+      mz: 2.0270923404430277
+  - name: plug
+    force_moment:
+      fx: -0.09787678336526126
+      fy: -0.12295742672945753
+      fz: 0.0
+      mx: -1.5254087778789647e-05
+      my: 1.2142585320189452e-05
+      mz: 2.0270923404430277
