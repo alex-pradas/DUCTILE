@@ -102,7 +102,7 @@ To use with Claude Code, copy the `agent/` contents to a working directory and s
 
 ## Citation
 
-If you use this code, please cite:
+If you use this work, please cite the paper:
 
 ```bibtex
 @article{pradasgomez2026ductile,
@@ -115,6 +115,19 @@ If you use this code, please cite:
   year    = {2026},
   publisher = {ASME},
   doi     = {10.1115/1.4072279}
+}
+```
+
+To cite this repository (code and data archive) specifically:
+
+```bibtex
+@software{pradasgomez2026ductile_code,
+  author    = {Pradas-G{\'o}mez, Alejandro and Brahma, Arindam and Isaksson, Ola},
+  title     = {{DUCTILE}: Agentic Large Language Model Orchestration of Engineering Analysis in Product Development Design Practice},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.18836517},
+  url       = {https://doi.org/10.5281/zenodo.18836517}
 }
 ```
 

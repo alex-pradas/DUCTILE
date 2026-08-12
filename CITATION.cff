@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "DUCTILE: Agentic Large Language Model Orchestration of Engineering Analysis in Product Development Design Practice"
 type: software
+doi: 10.5281/zenodo.18836517
 authors:
   - family-names: "Pradas-Gómez"
     given-names: "Alejandro"
