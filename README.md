@@ -2,7 +2,7 @@
 
 **Delegated, User-supervised Coordination of Tool- and document-Integrated LLM-Enabled engineering analysis**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18836517.svg)](https://doi.org/10.5281/zenodo.18836517)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18836516.svg)](https://doi.org/10.5281/zenodo.18836516)
 
 ## About
 
@@ -126,8 +126,8 @@ To cite this repository (code and data archive) specifically:
   title     = {{DUCTILE}: Agentic Large Language Model Orchestration of Engineering Analysis in Product Development Design Practice},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.18836517},
-  url       = {https://doi.org/10.5281/zenodo.18836517}
+  doi       = {10.5281/zenodo.18836516},
+  url       = {https://doi.org/10.5281/zenodo.18836516}
 }
 ```
 
