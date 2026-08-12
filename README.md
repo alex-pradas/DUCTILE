@@ -6,10 +6,10 @@
 
 ## About
 
-This repository contains the implementation, evaluation pipeline, and session transcripts for the DUCTILE approach to agentic LLM orchestration of engineering analysis, accompanying the paper (currently in review):
+This repository contains the implementation, evaluation pipeline, and session transcripts for the DUCTILE approach to agentic LLM orchestration of engineering analysis, accompanying the published paper:
 
-> A. Pradas-Gomez, A. Brahma, and O. Isaksson, "DUCTILE: Agentic LLM Orchestration of Engineering Analysis in Product Development Practice," *Journal of Mechanical Design*, ASME, 2026.
-> <!-- DOI: [10.1115/1.4XXXXXX](https://doi.org/10.1115/1.4XXXXXX) -->
+> A. Pradas-Gomez, A. Brahma, and O. Isaksson, "DUCTILE: Agentic Large Language Model Orchestration of Engineering Analysis in Product Development Design Practice," *Journal of Mechanical Design*, vol. 148, no. 12, p. 121706, 2026.
+> DOI: [10.1115/1.4072279](https://doi.org/10.1115/1.4072279)
 
 DUCTILE separates *interpretation* (handled by an LLM) from *computation* (handled by verified tools), enabling agentic engineering analysis that is traceable, auditable, and adaptable to evolving product development contexts.
 
@@ -107,11 +107,14 @@ If you use this code, please cite:
 ```bibtex
 @article{pradasgomez2026ductile,
   author  = {Pradas-G{\'o}mez, Alejandro and Brahma, Arindam and Isaksson, Ola},
-  title   = {{DUCTILE}: Agentic {LLM} Orchestration of Engineering Analysis in Product Development Practice},
+  title   = {{DUCTILE}: Agentic Large Language Model Orchestration of Engineering Analysis in Product Development Design Practice},
   journal = {Journal of Mechanical Design},
+  volume  = {148},
+  number  = {12},
+  pages   = {121706},
   year    = {2026},
   publisher = {ASME},
-  note    = {DOI forthcoming}
+  doi     = {10.1115/1.4072279}
 }
 ```
 
